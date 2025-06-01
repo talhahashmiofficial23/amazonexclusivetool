@@ -29,6 +29,4 @@ testing.py
 database.env
 cron.log
 /venv2/
-Dockerfile
-
 .vscode

@@ -5,6 +5,8 @@ from django.db import models
 from BaseModel.models import TimeStampedModel
 
 
+from django.conf import settings
+
 class AmazonExclusive(TimeStampedModel):
     article_color_name = models.CharField(max_length=100, null=True, blank=True)
     master_season = models.CharField(max_length=50, null=True, blank=True)
@@ -25,6 +27,8 @@ class AmazonExclusive(TimeStampedModel):
     planned_discount = models.DecimalField(max_digits=4, decimal_places=2, default=0.0)
     planned_asp = models.DecimalField(max_digits=10, decimal_places=4, default=0.0)
     merch_like_styles = models.TextField(null=True, blank=True)
+    created_by = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='amazonexclusives_created', on_delete=models.SET_NULL, null=True, blank=True)
+    modified_by = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='amazonexclusives_modified', on_delete=models.SET_NULL, null=True, blank=True)
 
     def __str__(self):
         return self.article_color_name

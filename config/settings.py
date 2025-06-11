@@ -55,11 +55,22 @@ WSGI_APPLICATION = 'config.wsgi.application'
 import environ
 env = environ.Env()
 environ.Env.read_env('.env')
+# DATABASES = {
+#     'default': env.db_url(
+#         'DATABASE_URL',
+#         default='postgresql://admin1:password@localhost:5434/data_db'
+#     )
+# }
+
 DATABASES = {
-    'default': env.db_url(
-        'DATABASE_URL',
-        default='postgresql://admin1:password@localhost:5434/data_db'
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DB_NAME', 'ptool'),
+        'USER': os.getenv('DB_USER', 'ptool'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST', '51.89.187.30'),
+        'PORT': os.getenv('DB_PORT', '5432'),
+    }
 }
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -84,10 +95,13 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
+    'DEFAULT_PAGINATION_CLASS': 'AmazoneMapApp.pagination.CustomPageNumberPagination',
+    'PAGE_SIZE': 20,
 }
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
-    'AUTH_HEADER_TYPES': ('Bearer',),
+    'AUTH_HEADER_TYPES': ('Token', 'token'),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
 }

@@ -2,6 +2,32 @@ from django.contrib.auth.models import User
 from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
 from django.contrib.auth.password_validation import validate_password
+from django.contrib.auth import authenticate
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+
+class EmailOrUsernameTokenObtainPairSerializer(TokenObtainPairSerializer):
+    username_field = 'username'
+
+    def validate(self, attrs):
+        credentials = {
+            'username': attrs.get('username'),
+            'password': attrs.get('password')
+        }
+        user = None
+        # Try authenticating with username
+        user = authenticate(username=credentials['username'], password=credentials['password'])
+        if not user:
+            # Try authenticating with email
+            try:
+                user_obj = User.objects.get(email=credentials['username'])
+                user = authenticate(username=user_obj.username, password=credentials['password'])
+            except User.DoesNotExist:
+                pass
+        if user is None:
+            raise serializers.ValidationError('No active account found with the given credentials')
+        # Only return the access token, and rename it to 'token'
+        token_data = super().validate({'username': user.username, 'password': credentials['password']})
+        return {'token': token_data['access']}
 
 class RegisterSerializer(serializers.ModelSerializer):
     email = serializers.EmailField(

@@ -1,11 +1,8 @@
 from django.contrib.auth.models import User
-from django.core.mail import send_mail
-from rest_framework import generics, status
-from rest_framework.response import Response
-from rest_framework_simplejwt.views import TokenObtainPairView
+from rest_framework import generics
 from rest_framework.permissions import AllowAny
-from .serializers import RegisterSerializer
-from django.utils.crypto import get_random_string
+from rest_framework_simplejwt.views import TokenObtainPairView
+from .serializers import RegisterSerializer, EmailOrUsernameTokenObtainPairSerializer
 
 class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
@@ -14,26 +11,9 @@ class RegisterView(generics.CreateAPIView):
 
     def perform_create(self, serializer):
         user = serializer.save()
-        token = get_random_string(30)
-        user.profile.verification_token = token
-        user.profile.save()
-        send_mail(
-            "Verify your email",
-            f"Click the link to verify your account: http://localhost:8000/api/auth/verify/{token}/",
-            "no-reply@example.com",
-            [user.email]
-        )
+        user.is_active = True
+        user.save()
 
-class VerifyEmailView(generics.GenericAPIView):
-    permission_classes = (AllowAny,)
+class CustomTokenObtainPairView(TokenObtainPairView):
+    serializer_class = EmailOrUsernameTokenObtainPairSerializer
 
-    def get(self, request, token):
-        try:
-            profile = User.objects.get(profile__verification_token=token).profile
-            profile.user.is_active = True
-            profile.verification_token = ''
-            profile.user.save()
-            profile.save()
-            return Response({"message": "Email verified successfully!"})
-        except Exception:
-            return Response({"error": "Invalid or expired token"}, status=400)

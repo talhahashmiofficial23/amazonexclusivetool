@@ -1,32 +1,50 @@
-.idea/
-.idea
-*.log
-.env
-*.pot
+# Python
+__pycache__/
+__pycache__
+*.py[cod]
+*.pyo
+*.pyd
+*.swp
 
-*.pyc
-
-*/*/*/__pycache__/
-
-*/*/__pycache__/
-
-*/__pycache__/
-quick_invoice/__pycache__/
-
+# Django
 db.sqlite3
+*.log
+*.pot
+*.pyc
+*.mo
 
-venv
+# Virtualenv
 venv/
-venv2
+.env/
+.env
+.venv/
+.venv
 
-newenv
-newenv/
+# VSCode / PyCharm
+.vscode/
+.idea/
 
-config.py
-t_sms.py
-celerybeat-schedule
-testing.py
-database.env
-cron.log
-/venv2/
-.vscode
+# macOS
+.DS_Store
+
+# Migrations
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+
+# Coverage and testing
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.pytest_cache/
+
+# Docker
+*.pid
+*.sock
+
+# Static & media
+staticfiles/
+media/

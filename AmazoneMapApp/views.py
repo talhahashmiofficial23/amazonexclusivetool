@@ -1,13 +1,19 @@
 # views.py
 
 from rest_framework import viewsets
+from rest_framework_simplejwt.authentication import JWTAuthentication
 from .models import AmazonExclusive
 from .serializers import AmazonExclusiveSerializer
 
 class AmazonExclusiveViewSet(viewsets.ModelViewSet):
-    queryset = AmazonExclusive.objects.all()
+    authentication_classes = [JWTAuthentication]
+    queryset = AmazonExclusive.objects.all().order_by('-id')
     serializer_class = AmazonExclusiveSerializer
 
+    def perform_create(self, serializer):
+        user = self.request.user if self.request.user.is_authenticated else None
+        serializer.save(created_by=user, modified_by=user)
 
-
-# df = pd.read_excel("AMAZON EXCLUSIVES_MAP TOOL SEND_MAY 2025[39].xlsx", engine="openpyxl", skiprows=1)
+    def perform_update(self, serializer):
+        user = self.request.user if self.request.user.is_authenticated else None
+        serializer.save(modified_by=user)

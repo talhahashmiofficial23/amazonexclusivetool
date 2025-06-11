@@ -5,8 +5,11 @@ from rest_framework_simplejwt.authentication import JWTAuthentication
 from .models import AmazonExclusive
 from .serializers import AmazonExclusiveSerializer
 
+from rest_framework.permissions import IsAuthenticated
+
 class AmazonExclusiveViewSet(viewsets.ModelViewSet):
     authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
     queryset = AmazonExclusive.objects.all().order_by('-id')
     serializer_class = AmazonExclusiveSerializer
 

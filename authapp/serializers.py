@@ -25,9 +25,21 @@ class EmailOrUsernameTokenObtainPairSerializer(TokenObtainPairSerializer):
                 pass
         if user is None:
             raise serializers.ValidationError('No active account found with the given credentials')
-        # Only return the access token, and rename it to 'token'
         token_data = super().validate({'username': user.username, 'password': credentials['password']})
-        return {'token': token_data['access']}
+        # Return token and user details
+        return {
+            'token': token_data['access'],
+            'user': {
+                'id': user.id,
+                'username': user.username,
+                'email': user.email,
+                'first_name': user.first_name,
+                'last_name': user.last_name,
+                'is_active': user.is_active,
+                'role': getattr(user.profile, 'role', None),
+            }
+        }
+
 
 class RegisterSerializer(serializers.ModelSerializer):
     email = serializers.EmailField(

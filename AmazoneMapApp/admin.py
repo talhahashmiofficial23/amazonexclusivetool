@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import AmazonExclusive
+from .models import AmazonExclusive, ProductPriceHistory
 
 @admin.register(AmazonExclusive)
 class AmazonExclusiveAdmin(admin.ModelAdmin):
@@ -12,3 +12,13 @@ class AmazonExclusiveAdmin(admin.ModelAdmin):
     )
     search_fields = ("style_number", "asin", "upc", "article_color_name", "created_by__username", "modified_by__username")
     list_filter = ("year", "category", "current_status", "created_by", "modified_by")
+
+
+@admin.register(ProductPriceHistory)
+class ProductPriceHistoryAdmin(admin.ModelAdmin):
+    list_display = ('amazon_exclusive', 'old_price', 'new_price', 'created_at', 'updated_at')
+    list_filter = ('created_at', 'updated_at')
+    search_fields = ('amazon_exclusive__article_color_name', 'amazon_exclusive__style_number')
+    readonly_fields = ('created_at', 'updated_at')
+    date_hierarchy = 'created_at'
+    list_select_related = ('amazon_exclusive',)

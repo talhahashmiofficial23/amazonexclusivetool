@@ -1,5 +1,8 @@
 from django.contrib import admin
-from .models import AmazonExclusive, ProductPriceHistory
+from .models import (
+    AmazonExclusive, ProductPriceHistory,
+    MasterSeason, DepartmentDivision, Category, Subclass
+)
 
 @admin.register(AmazonExclusive)
 class AmazonExclusiveAdmin(admin.ModelAdmin):
@@ -22,3 +25,39 @@ class ProductPriceHistoryAdmin(admin.ModelAdmin):
     readonly_fields = ('created_at', 'updated_at')
     date_hierarchy = 'created_at'
     list_select_related = ('amazon_exclusive',)
+
+
+@admin.register(MasterSeason)
+class MasterSeasonAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'created_at', 'updated_at')
+    search_fields = ('name',)
+    list_display_links = ('name',)
+    ordering = ('name',)
+    readonly_fields = ('created_at', 'updated_at')
+
+
+@admin.register(DepartmentDivision)
+class DepartmentDivisionAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'created_at', 'updated_at')
+    search_fields = ('name',)
+    list_display_links = ('name',)
+    ordering = ('name',)
+    readonly_fields = ('created_at', 'updated_at')
+
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'created_at', 'updated_at')
+    search_fields = ('name',)
+    list_display_links = ('name',)
+    ordering = ('name',)
+    readonly_fields = ('created_at', 'updated_at')
+
+
+@admin.register(Subclass)
+class SubclassAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'created_at', 'updated_at')
+    search_fields = ('name',)
+    list_display_links = ('name',)
+    ordering = ('name',)
+    readonly_fields = ('created_at', 'updated_at')

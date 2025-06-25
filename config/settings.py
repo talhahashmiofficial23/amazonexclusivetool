@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
     'corsheaders',
+    'django_filters',
     'authapp',
     'AmazoneMapApp',
 ]

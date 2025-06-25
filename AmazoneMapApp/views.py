@@ -1,11 +1,15 @@
 # views.py
-from rest_framework import viewsets, mixins
+from rest_framework import viewsets, mixins, filters
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework_simplejwt.authentication import JWTAuthentication
-from .models import AmazonExclusive, ProductPriceHistory
-from .serializers import AmazonExclusiveSerializer, ProductPriceHistorySerializer, CreateProductPriceHistorySerializer
+from django_filters.rest_framework import DjangoFilterBackend
+from .models import AmazonExclusive, ProductPriceHistory, MasterSeason, DepartmentDivision, Category, Subclass
+from .serializers import (
+    AmazonExclusiveSerializer, ProductPriceHistorySerializer, CreateProductPriceHistorySerializer,
+    MasterSeasonSerializer, DepartmentDivisionSerializer, CategorySerializer, SubclassSerializer
+)
 
 from rest_framework.permissions import IsAuthenticated
 
@@ -51,6 +55,61 @@ class AmazonExclusiveViewSet(viewsets.ModelViewSet):
 
     def perform_bulk_create(self, serializer):
         serializer.save()
+
+
+class BaseDropdownViewSet(viewsets.ModelViewSet):
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
+    filter_backends = [filters.SearchFilter, DjangoFilterBackend]
+    search_fields = ['name']
+    filterset_fields = ['name']
+    
+    def get_queryset(self):
+        queryset = self.queryset.order_by('name')
+        
+        # Handle search by name
+        search_query = self.request.query_params.get('search', None)
+        if search_query:
+            queryset = queryset.filter(name__icontains=search_query)
+            
+        return queryset
+    
+    def create(self, request, *args, **kwargs):
+        response = super().create(request, *args, **kwargs)
+        model_name = self.queryset.model._meta.verbose_name
+        return Response(
+            {"message": f"{model_name} created successfully", "data": response.data},
+            status=status.HTTP_201_CREATED
+        )
+    
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        model_name = self.queryset.model._meta.verbose_name
+        self.perform_destroy(instance)
+        return Response(
+            {"message": f"{model_name} deleted successfully"},
+            status=status.HTTP_200_OK
+        )
+
+
+class MasterSeasonViewSet(BaseDropdownViewSet):
+    queryset = MasterSeason.objects.all()
+    serializer_class = MasterSeasonSerializer
+
+
+class DepartmentDivisionViewSet(BaseDropdownViewSet):
+    queryset = DepartmentDivision.objects.all()
+    serializer_class = DepartmentDivisionSerializer
+
+
+class CategoryViewSet(BaseDropdownViewSet):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
+
+
+class SubclassViewSet(BaseDropdownViewSet):
+    queryset = Subclass.objects.all()
+    serializer_class = SubclassSerializer
 
 
 class ProductPriceHistoryViewSet(viewsets.GenericViewSet, mixins.CreateModelMixin):

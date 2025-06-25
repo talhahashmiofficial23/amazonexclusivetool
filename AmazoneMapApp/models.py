@@ -6,13 +6,57 @@ from decimal import Decimal
 
 from BaseModel.models import TimeStampedModel
 
+
+class MasterSeason(TimeStampedModel):
+    name = models.CharField(max_length=100, unique=True)
+    
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Master Season"
+        verbose_name_plural = "Master Seasons"
+
+
+class DepartmentDivision(TimeStampedModel):
+    name = models.CharField(max_length=100, unique=True)
+    
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Department Division"
+        verbose_name_plural = "Department Divisions"
+
+
+class Category(TimeStampedModel):
+    name = models.CharField(max_length=100, unique=True)
+    
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Category"
+        verbose_name_plural = "Categories"
+
+
+class Subclass(TimeStampedModel):
+    name = models.CharField(max_length=100, unique=True)
+    
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Subclass"
+        verbose_name_plural = "Subclasses"
+
 class AmazonExclusive(TimeStampedModel):
     article_color_name = models.CharField(max_length=100, null=True, blank=True)
-    master_season = models.CharField(max_length=50, null=True, blank=True)
+    master_season = models.ForeignKey(MasterSeason, on_delete=models.SET_NULL, null=True, blank=True)
     year = models.IntegerField(default=1, null=True, blank=True)
-    dept_div = models.CharField(max_length=100, null=True, blank=True)
-    category = models.CharField(max_length=100, null=True, blank=True)
-    subclass = models.CharField(max_length=100, null=True, blank=True)
+    dept_div = models.ForeignKey(DepartmentDivision, on_delete=models.SET_NULL, null=True, blank=True, verbose_name='Department Division')
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True)
+    subclass = models.ForeignKey(Subclass, on_delete=models.SET_NULL, null=True, blank=True)
     style_number = models.CharField(max_length=50, null=True, blank=True)
     style_desc = models.CharField(max_length=255, null=True, blank=True)
     color_desc = models.CharField(max_length=100, null=True, blank=True)

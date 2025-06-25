@@ -1,9 +1,33 @@
 # serializers.py
 
 from rest_framework import serializers
-from .models import AmazonExclusive, ProductPriceHistory
+from .models import AmazonExclusive, ProductPriceHistory, MasterSeason, DepartmentDivision, Category, Subclass
 
 from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
+
+
+class MasterSeasonSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = MasterSeason
+        fields = '__all__'
+
+
+class DepartmentDivisionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = DepartmentDivision
+        fields = '__all__'
+
+
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = '__all__'
+
+
+class SubclassSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Subclass
+        fields = '__all__'
 
 
 class ProductPriceHistorySerializer(serializers.ModelSerializer):

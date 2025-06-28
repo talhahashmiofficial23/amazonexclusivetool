@@ -6,3 +6,4 @@ python-dotenv
 drf-yasg
 django-environ
 django-cors-headers
+django-filter

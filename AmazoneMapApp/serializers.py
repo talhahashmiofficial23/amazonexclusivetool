@@ -106,10 +106,10 @@ class CreateProductPriceHistorySerializer(serializers.ModelSerializer):
 class AmazonExclusiveSerializer(serializers.ModelSerializer):
     latest_price = serializers.SerializerMethodField(read_only=True)  # For latest price history
     price_history = serializers.SerializerMethodField(read_only=True) # Will return only latest history
-    master_season_name = serializers.CharField(source='master_season.name', read_only=True)
-    dept_div_name = serializers.CharField(source='dept_div.name', read_only=True)
-    category_name = serializers.CharField(source='category.name', read_only=True)
-    subclass_name = serializers.CharField(source='subclass.name', read_only=True)
+    master_season = serializers.CharField(source='master_season.name', read_only=True)
+    dept_div = serializers.CharField(source='dept_div.name', read_only=True)
+    category = serializers.CharField(source='category.name', read_only=True)
+    subclass = serializers.CharField(source='subclass.name', read_only=True)
 
     def get_latest_price(self, obj):
         # Return the current price (same as list_price, but for consistency in API)

@@ -103,35 +103,42 @@ class CreateProductPriceHistorySerializer(serializers.ModelSerializer):
         return price_history
 
 
+class NameRelatedField(serializers.Field):
+    def __init__(self, model, **kwargs):
+        self.model = model
+        super().__init__(**kwargs)
+
+    def to_internal_value(self, data):
+        # Accept either an integer (ID) or a string (name)
+        if isinstance(data, int):
+            try:
+                return self.model.objects.get(pk=data)
+            except self.model.DoesNotExist:
+                raise serializers.ValidationError(f"No {self.model.__name__} found with id={data}.")
+        elif isinstance(data, str):
+            obj, _ = self.model.objects.get_or_create(name=data)
+            return obj
+        else:
+            raise serializers.ValidationError('This field must be a string (name) or integer (id).')
+
+    def to_representation(self, value):
+        return value.name if value else None
+
 class AmazonExclusiveSerializer(serializers.ModelSerializer):
-    latest_price = serializers.SerializerMethodField(read_only=True)  # For latest price history
-    price_history = serializers.SerializerMethodField(read_only=True) # Will return only latest history
-    master_season = serializers.CharField(source='master_season.name', read_only=True)
-    dept_div = serializers.CharField(source='dept_div.name', read_only=True)
-    category = serializers.CharField(source='category.name', read_only=True)
-    subclass = serializers.CharField(source='subclass.name', read_only=True)
+    latest_price = serializers.SerializerMethodField(read_only=True)
+    price_history = serializers.SerializerMethodField(read_only=True)
+    master_season = NameRelatedField(model=MasterSeason, required=False, allow_null=True)
+    dept_div = NameRelatedField(model=DepartmentDivision, required=False, allow_null=True)
+    category = NameRelatedField(model=Category, required=False, allow_null=True)
+    subclass = NameRelatedField(model=Subclass, required=False, allow_null=True)
 
     def get_latest_price(self, obj):
-        # Return the current price (same as list_price, but for consistency in API)
         return obj.list_price
-        
     def get_price_history(self, obj):
-        # Get only the latest price history for this product
         latest_history = obj.price_history.order_by('-created_at').first()
         if latest_history:
             return ProductPriceHistorySerializer(latest_history).data
         return None
-
-    """Serializer for AmazonExclusive with custom cleaning for decimal fields.
-
-    Incoming values for list_price (max_digits=50, decimal_places=2),
-    planned_discount (max_digits=40, decimal_places=2) and planned_asp
-    (max_digits=50, decimal_places=4) are cleaned:
-        • Non-numeric or malformed values → 0
-        • Values are quantized to the correct number of decimal places.
-        • If the overall digit length exceeds max_digits after quantizing,
-          the value is truncated to 0 to avoid DB errors.
-    """
 
     def _clean_decimal(self, value, decimal_places, max_digits):
         if value in (None, ''):
@@ -140,13 +147,11 @@ class AmazonExclusiveSerializer(serializers.ModelSerializer):
             d = Decimal(str(value).replace(',', ''))
         except (InvalidOperation, ValueError):
             return Decimal('0')
-        # Quantize to required decimal places
-        quant = Decimal('1').scaleb(-decimal_places)  # e.g. Decimal('0.01')
+        quant = Decimal('1').scaleb(-decimal_places)
         d = d.quantize(quant, rounding=ROUND_HALF_UP)
-        # Check total digits (digits before + after the decimal point)
         digits_total = len(d.as_tuple().digits)
         if d.as_tuple().sign:
-            digits_total -= 1  # sign doesn't count
+            digits_total -= 1
         if digits_total > max_digits:
             return Decimal('0')
         return d
@@ -157,8 +162,8 @@ class AmazonExclusiveSerializer(serializers.ModelSerializer):
         attrs['planned_discount'] = self._clean_decimal(attrs.get('planned_discount'), 2, 40)
         attrs['planned_asp'] = self._clean_decimal(attrs.get('planned_asp'), 4, 50)
         return attrs
+
     class Meta:
         model = AmazonExclusive
         fields = '__all__'
         read_only_fields = ('price_history', 'latest_price')
-        # Note: list_price remains writable for updates through the API

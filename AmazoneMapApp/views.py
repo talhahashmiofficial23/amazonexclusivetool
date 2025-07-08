@@ -34,20 +34,48 @@ class AmazonExclusiveViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'], url_path='dashboard')
     def dashboard(self, request):
-        """Return all AmazonExclusive records including price histories for dashboard."""
-        qs = self.filter_queryset(self.get_queryset())
+        """Return all AmazonExclusive records including price histories for dashboard, paginated."""
+        qs = self.filter_queryset(
+            self.get_queryset()
+            .select_related('master_season', 'dept_div', 'category', 'subclass')
+            .prefetch_related('price_history')
+        )
+        page = self.paginate_queryset(qs)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
         serializer = self.get_serializer(qs, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     @action(detail=False, methods=['post'], url_path='bulk_create')
     def bulk_create(self, request):
-        # user = request.user if request.user.is_authenticated else None
+        from .models import MasterSeason, DepartmentDivision, Category, Subclass
         data = request.data
         if not isinstance(data, list):
             return Response({'detail': 'Expected a list of items.'}, status=status.HTTP_400_BAD_REQUEST)
-        # for item in data:
-        #     item['created_by'] = user.id if user else None
-        #     item['modified_by'] = user.id if user else None
+
+        fk_map = {
+            'master_season': MasterSeason,
+            'dept_div': DepartmentDivision,
+            'category': Category,
+            'subclass': Subclass,
+        }
+        for item in data:
+            # Clean planned_discount and planned_asp
+            for field in ['planned_discount', 'planned_asp']:
+                val = item.get(field)
+                if isinstance(val, str):
+                    try:
+                        # Try to convert to float, if fails set to 0
+                        float(val)
+                    except Exception:
+                        item[field] = 0
+            # Foreign key resolution/creation
+            for fk_field, model in fk_map.items():
+                val = item.get(fk_field)
+                if val and isinstance(val, str):
+                    obj, _ = model.objects.get_or_create(name=val)
+                    item[fk_field] = obj.id
         serializer = self.get_serializer(data=data, many=True)
         serializer.is_valid(raise_exception=True)
         self.perform_bulk_create(serializer)

@@ -1,0 +1,192 @@
+[
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-06-25T19:14:47.195Z",
+    "updated_at": "2025-06-25T19:14:47.195Z",
+    "is_active": true,
+    "name": "Men's Fashion"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-06-25T19:15:15.509Z",
+    "updated_at": "2025-06-25T19:15:15.509Z",
+    "is_active": true,
+    "name": "Women's Fashion"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-06-28T18:45:57.395Z",
+    "updated_at": "2025-06-28T18:45:57.395Z",
+    "is_active": true,
+    "name": "ACCESSORIES"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 4,
+  "fields": {
+    "created_at": "2025-06-28T18:45:58.240Z",
+    "updated_at": "2025-06-28T18:45:58.240Z",
+    "is_active": true,
+    "name": "BIG BOYS"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 5,
+  "fields": {
+    "created_at": "2025-06-28T18:45:59.135Z",
+    "updated_at": "2025-06-28T18:45:59.135Z",
+    "is_active": true,
+    "name": "BIG GIRLS"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 6,
+  "fields": {
+    "created_at": "2025-06-28T18:46:00.057Z",
+    "updated_at": "2025-06-28T18:46:00.057Z",
+    "is_active": true,
+    "name": "GYM ACCESSORIES"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 7,
+  "fields": {
+    "created_at": "2025-06-28T18:46:00.848Z",
+    "updated_at": "2025-06-28T18:46:00.848Z",
+    "is_active": true,
+    "name": "GYM BIG BOYS"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 8,
+  "fields": {
+    "created_at": "2025-06-28T18:46:01.701Z",
+    "updated_at": "2025-06-28T18:46:01.701Z",
+    "is_active": true,
+    "name": "GYM BIG GIRLS"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 9,
+  "fields": {
+    "created_at": "2025-06-28T18:46:02.515Z",
+    "updated_at": "2025-06-28T18:46:02.515Z",
+    "is_active": true,
+    "name": "GYM NEWBORN"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 10,
+  "fields": {
+    "created_at": "2025-06-28T18:46:03.335Z",
+    "updated_at": "2025-06-28T18:46:03.335Z",
+    "is_active": true,
+    "name": "GYM SHOES"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 11,
+  "fields": {
+    "created_at": "2025-06-28T18:46:04.154Z",
+    "updated_at": "2025-06-28T18:46:04.154Z",
+    "is_active": true,
+    "name": "GYM SLEEPWEAR"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 12,
+  "fields": {
+    "created_at": "2025-06-28T18:46:04.911Z",
+    "updated_at": "2025-06-28T18:46:04.911Z",
+    "is_active": true,
+    "name": "GYM TODDLER BOYS"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 13,
+  "fields": {
+    "created_at": "2025-06-28T18:46:05.689Z",
+    "updated_at": "2025-06-28T18:46:05.689Z",
+    "is_active": true,
+    "name": "GYM TODDLER GIRLS"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 14,
+  "fields": {
+    "created_at": "2025-06-28T18:46:06.509Z",
+    "updated_at": "2025-06-28T18:46:06.509Z",
+    "is_active": true,
+    "name": "NEWBORN"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 15,
+  "fields": {
+    "created_at": "2025-06-28T18:46:07.297Z",
+    "updated_at": "2025-06-28T18:46:07.297Z",
+    "is_active": true,
+    "name": "SHOES"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 16,
+  "fields": {
+    "created_at": "2025-06-28T18:46:08.148Z",
+    "updated_at": "2025-06-28T18:46:08.148Z",
+    "is_active": true,
+    "name": "SLEEPWEAR"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 17,
+  "fields": {
+    "created_at": "2025-06-28T18:46:08.971Z",
+    "updated_at": "2025-06-28T18:46:08.971Z",
+    "is_active": true,
+    "name": "TODDLER BOYS"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 18,
+  "fields": {
+    "created_at": "2025-06-28T18:46:09.763Z",
+    "updated_at": "2025-06-28T18:46:09.763Z",
+    "is_active": true,
+    "name": "TODDLER GIRLS"
+  }
+},
+{
+  "model": "AmazoneMapApp.departmentdivision",
+  "pk": 19,
+  "fields": {
+    "created_at": "2025-07-01T08:42:52.129Z",
+    "updated_at": "2025-07-01T08:42:52.129Z",
+    "is_active": true,
+    "name": "BIKINI"
+  }
+}
+]

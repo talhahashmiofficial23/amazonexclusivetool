@@ -1,0 +1,2242 @@
+[
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-06-28T18:47:16.620Z",
+    "updated_at": "2025-07-01T08:37:39.003Z",
+    "is_active": true,
+    "name": "2F FLIP FLOPS tEST"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-06-28T18:47:17.438Z",
+    "updated_at": "2025-06-28T18:47:17.438Z",
+    "is_active": true,
+    "name": "2PC SET"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-06-28T18:47:18.291Z",
+    "updated_at": "2025-06-28T18:47:18.291Z",
+    "is_active": true,
+    "name": "3 IN 1 OUTERWEAR"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 4,
+  "fields": {
+    "created_at": "2025-06-28T18:47:19.213Z",
+    "updated_at": "2025-06-28T18:47:19.213Z",
+    "is_active": true,
+    "name": "3IN1 OUTERWEAR MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 5,
+  "fields": {
+    "created_at": "2025-06-28T18:47:20.032Z",
+    "updated_at": "2025-06-28T18:47:20.032Z",
+    "is_active": true,
+    "name": "3N1 GLOVES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 6,
+  "fields": {
+    "created_at": "2025-06-28T18:47:20.792Z",
+    "updated_at": "2025-06-28T18:47:20.792Z",
+    "is_active": true,
+    "name": "3N1 HAT"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 7,
+  "fields": {
+    "created_at": "2025-06-28T18:47:21.606Z",
+    "updated_at": "2025-06-28T18:47:21.606Z",
+    "is_active": true,
+    "name": "ACTIVE KNITS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 8,
+  "fields": {
+    "created_at": "2025-06-28T18:47:22.489Z",
+    "updated_at": "2025-06-28T18:47:22.489Z",
+    "is_active": true,
+    "name": "ACTIVE SETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 9,
+  "fields": {
+    "created_at": "2025-06-28T18:47:23.310Z",
+    "updated_at": "2025-06-28T18:47:23.310Z",
+    "is_active": true,
+    "name": "ADULT"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 10,
+  "fields": {
+    "created_at": "2025-06-28T18:47:24.128Z",
+    "updated_at": "2025-06-28T18:47:24.128Z",
+    "is_active": true,
+    "name": "ADULT DRESSY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 11,
+  "fields": {
+    "created_at": "2025-06-28T18:47:24.888Z",
+    "updated_at": "2025-06-28T18:47:24.888Z",
+    "is_active": true,
+    "name": "AMERICANA"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 12,
+  "fields": {
+    "created_at": "2025-06-28T18:47:25.566Z",
+    "updated_at": "2025-06-28T18:47:25.566Z",
+    "is_active": true,
+    "name": "BACKPACKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 13,
+  "fields": {
+    "created_at": "2025-06-28T18:47:26.381Z",
+    "updated_at": "2025-06-28T18:47:26.381Z",
+    "is_active": true,
+    "name": "BASIC/ LAYER TEE"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 14,
+  "fields": {
+    "created_at": "2025-06-28T18:47:27.199Z",
+    "updated_at": "2025-06-28T18:47:27.199Z",
+    "is_active": true,
+    "name": "BASIC/LAYER T MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 15,
+  "fields": {
+    "created_at": "2025-06-28T18:47:28.024Z",
+    "updated_at": "2025-06-28T18:47:28.024Z",
+    "is_active": true,
+    "name": "BB SOCKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 16,
+  "fields": {
+    "created_at": "2025-06-28T18:47:28.839Z",
+    "updated_at": "2025-06-28T18:47:28.839Z",
+    "is_active": true,
+    "name": "BELTS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 17,
+  "fields": {
+    "created_at": "2025-06-28T18:47:29.657Z",
+    "updated_at": "2025-06-28T18:47:29.657Z",
+    "is_active": true,
+    "name": "BETTER FLIP FLOPS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 18,
+  "fields": {
+    "created_at": "2025-06-28T18:47:30.351Z",
+    "updated_at": "2025-06-28T18:47:30.351Z",
+    "is_active": true,
+    "name": "BG BOOT SOCKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 19,
+  "fields": {
+    "created_at": "2025-06-28T18:47:31.194Z",
+    "updated_at": "2025-06-28T18:47:31.194Z",
+    "is_active": true,
+    "name": "BG DRESSY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 20,
+  "fields": {
+    "created_at": "2025-06-28T18:47:32.218Z",
+    "updated_at": "2025-06-28T18:47:32.219Z",
+    "is_active": true,
+    "name": "BG HAIR"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 21,
+  "fields": {
+    "created_at": "2025-06-28T18:47:33.004Z",
+    "updated_at": "2025-06-28T18:47:33.004Z",
+    "is_active": true,
+    "name": "BG HATS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 22,
+  "fields": {
+    "created_at": "2025-06-28T18:47:33.842Z",
+    "updated_at": "2025-06-28T18:47:33.842Z",
+    "is_active": true,
+    "name": "BG SOCKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 23,
+  "fields": {
+    "created_at": "2025-06-28T18:47:34.778Z",
+    "updated_at": "2025-06-28T18:47:34.778Z",
+    "is_active": true,
+    "name": "BG TIGHTS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 24,
+  "fields": {
+    "created_at": "2025-06-28T18:47:35.563Z",
+    "updated_at": "2025-06-28T18:47:35.563Z",
+    "is_active": true,
+    "name": "BG TIGHTS MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 25,
+  "fields": {
+    "created_at": "2025-06-28T18:47:36.422Z",
+    "updated_at": "2025-06-28T18:47:36.422Z",
+    "is_active": true,
+    "name": "BIBS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 26,
+  "fields": {
+    "created_at": "2025-06-28T18:47:37.100Z",
+    "updated_at": "2025-06-28T18:47:37.100Z",
+    "is_active": true,
+    "name": "BIG"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 27,
+  "fields": {
+    "created_at": "2025-06-28T18:47:37.953Z",
+    "updated_at": "2025-06-28T18:47:37.953Z",
+    "is_active": true,
+    "name": "BIG MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 28,
+  "fields": {
+    "created_at": "2025-06-28T18:47:38.762Z",
+    "updated_at": "2025-06-28T18:47:38.762Z",
+    "is_active": true,
+    "name": "BIKE SHORT"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 29,
+  "fields": {
+    "created_at": "2025-06-28T18:47:39.574Z",
+    "updated_at": "2025-06-28T18:47:39.574Z",
+    "is_active": true,
+    "name": "BIKE SHORT MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 30,
+  "fields": {
+    "created_at": "2025-06-28T18:47:40.409Z",
+    "updated_at": "2025-06-28T18:47:40.409Z",
+    "is_active": true,
+    "name": "BLANKETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 31,
+  "fields": {
+    "created_at": "2025-06-28T18:47:41.229Z",
+    "updated_at": "2025-06-28T18:47:41.229Z",
+    "is_active": true,
+    "name": "BOAT SHOE"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 32,
+  "fields": {
+    "created_at": "2025-06-28T18:47:41.986Z",
+    "updated_at": "2025-06-28T18:47:41.986Z",
+    "is_active": true,
+    "name": "BODYSUIT SETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 33,
+  "fields": {
+    "created_at": "2025-06-28T18:47:42.873Z",
+    "updated_at": "2025-06-28T18:47:42.873Z",
+    "is_active": true,
+    "name": "BOOTCUT"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 34,
+  "fields": {
+    "created_at": "2025-06-28T18:47:43.669Z",
+    "updated_at": "2025-06-28T18:47:43.669Z",
+    "is_active": true,
+    "name": "BOOTCUT MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 35,
+  "fields": {
+    "created_at": "2025-06-28T18:47:44.525Z",
+    "updated_at": "2025-06-28T18:47:44.525Z",
+    "is_active": true,
+    "name": "BOOTIES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 36,
+  "fields": {
+    "created_at": "2025-06-28T18:47:45.356Z",
+    "updated_at": "2025-06-28T18:47:45.356Z",
+    "is_active": true,
+    "name": "BOXERS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 37,
+  "fields": {
+    "created_at": "2025-06-28T18:47:46.175Z",
+    "updated_at": "2025-06-28T18:47:46.175Z",
+    "is_active": true,
+    "name": "BOYS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 38,
+  "fields": {
+    "created_at": "2025-06-28T18:47:47.033Z",
+    "updated_at": "2025-06-28T18:47:47.033Z",
+    "is_active": true,
+    "name": "BRAS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 39,
+  "fields": {
+    "created_at": "2025-06-28T18:47:47.988Z",
+    "updated_at": "2025-06-28T18:47:47.988Z",
+    "is_active": true,
+    "name": "BRIEFS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 40,
+  "fields": {
+    "created_at": "2025-06-28T18:47:48.807Z",
+    "updated_at": "2025-06-28T18:47:48.807Z",
+    "is_active": true,
+    "name": "CAMIS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 41,
+  "fields": {
+    "created_at": "2025-06-28T18:47:49.729Z",
+    "updated_at": "2025-06-28T18:47:49.729Z",
+    "is_active": true,
+    "name": "CAMIS MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 42,
+  "fields": {
+    "created_at": "2025-06-28T18:47:50.547Z",
+    "updated_at": "2025-06-28T18:47:50.547Z",
+    "is_active": true,
+    "name": "CAPRI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 43,
+  "fields": {
+    "created_at": "2025-06-28T18:47:51.335Z",
+    "updated_at": "2025-06-28T18:47:51.335Z",
+    "is_active": true,
+    "name": "CAPRI MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 44,
+  "fields": {
+    "created_at": "2025-06-28T18:47:52.191Z",
+    "updated_at": "2025-06-28T18:47:52.191Z",
+    "is_active": true,
+    "name": "CARDIGAN"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 45,
+  "fields": {
+    "created_at": "2025-06-28T18:47:52.974Z",
+    "updated_at": "2025-06-28T18:47:52.974Z",
+    "is_active": true,
+    "name": "CARGO"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 46,
+  "fields": {
+    "created_at": "2025-06-28T18:47:53.928Z",
+    "updated_at": "2025-06-28T18:47:53.928Z",
+    "is_active": true,
+    "name": "CARGO MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 47,
+  "fields": {
+    "created_at": "2025-06-28T18:47:54.746Z",
+    "updated_at": "2025-06-28T18:47:54.746Z",
+    "is_active": true,
+    "name": "CARTWHEEL MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 48,
+  "fields": {
+    "created_at": "2025-06-28T18:47:55.565Z",
+    "updated_at": "2025-06-28T18:47:55.565Z",
+    "is_active": true,
+    "name": "CASUAL"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 49,
+  "fields": {
+    "created_at": "2025-06-28T18:47:56.386Z",
+    "updated_at": "2025-06-28T18:47:56.386Z",
+    "is_active": true,
+    "name": "CHALET BOOTS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 50,
+  "fields": {
+    "created_at": "2025-06-28T18:47:57.204Z",
+    "updated_at": "2025-06-28T18:47:57.204Z",
+    "is_active": true,
+    "name": "CHINO"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 51,
+  "fields": {
+    "created_at": "2025-06-28T18:47:58.014Z",
+    "updated_at": "2025-06-28T18:47:58.014Z",
+    "is_active": true,
+    "name": "CORE"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 52,
+  "fields": {
+    "created_at": "2025-06-28T18:47:58.846Z",
+    "updated_at": "2025-06-28T18:47:58.846Z",
+    "is_active": true,
+    "name": "CORE MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 53,
+  "fields": {
+    "created_at": "2025-06-28T18:47:59.662Z",
+    "updated_at": "2025-06-28T18:47:59.662Z",
+    "is_active": true,
+    "name": "CORE TANKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 54,
+  "fields": {
+    "created_at": "2025-06-28T18:48:00.452Z",
+    "updated_at": "2025-06-28T18:48:00.452Z",
+    "is_active": true,
+    "name": "CORE TANKS MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 55,
+  "fields": {
+    "created_at": "2025-06-28T18:48:01.301Z",
+    "updated_at": "2025-06-28T18:48:01.301Z",
+    "is_active": true,
+    "name": "CORE TEES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 56,
+  "fields": {
+    "created_at": "2025-06-28T18:48:02.222Z",
+    "updated_at": "2025-06-28T18:48:02.222Z",
+    "is_active": true,
+    "name": "COVERUPS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 57,
+  "fields": {
+    "created_at": "2025-06-28T18:48:02.939Z",
+    "updated_at": "2025-06-28T18:48:02.939Z",
+    "is_active": true,
+    "name": "DENIM"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 58,
+  "fields": {
+    "created_at": "2025-06-28T18:48:03.765Z",
+    "updated_at": "2025-06-28T18:48:03.765Z",
+    "is_active": true,
+    "name": "DENIM JACKET"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 59,
+  "fields": {
+    "created_at": "2025-06-28T18:48:04.543Z",
+    "updated_at": "2025-06-28T18:48:04.543Z",
+    "is_active": true,
+    "name": "DENIM MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 60,
+  "fields": {
+    "created_at": "2025-06-28T18:48:05.396Z",
+    "updated_at": "2025-06-28T18:48:05.396Z",
+    "is_active": true,
+    "name": "DENIM NOVELTY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 61,
+  "fields": {
+    "created_at": "2025-06-28T18:48:06.216Z",
+    "updated_at": "2025-06-28T18:48:06.216Z",
+    "is_active": true,
+    "name": "DENIM NOVETY MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 62,
+  "fields": {
+    "created_at": "2025-06-28T18:48:07.013Z",
+    "updated_at": "2025-06-28T18:48:07.013Z",
+    "is_active": true,
+    "name": "DRESSES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 63,
+  "fields": {
+    "created_at": "2025-06-28T18:48:07.854Z",
+    "updated_at": "2025-06-28T18:48:07.854Z",
+    "is_active": true,
+    "name": "DRESSY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 64,
+  "fields": {
+    "created_at": "2025-06-28T18:48:08.674Z",
+    "updated_at": "2025-06-28T18:48:08.674Z",
+    "is_active": true,
+    "name": "EASTER"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 65,
+  "fields": {
+    "created_at": "2025-06-28T18:48:09.491Z",
+    "updated_at": "2025-06-28T18:48:09.491Z",
+    "is_active": true,
+    "name": "ELEVATED"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 66,
+  "fields": {
+    "created_at": "2025-06-28T18:48:10.312Z",
+    "updated_at": "2025-06-28T18:48:10.312Z",
+    "is_active": true,
+    "name": "ELEVATED MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 67,
+  "fields": {
+    "created_at": "2025-06-28T18:48:11.046Z",
+    "updated_at": "2025-06-28T18:48:11.046Z",
+    "is_active": true,
+    "name": "EVA SLIDES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 68,
+  "fields": {
+    "created_at": "2025-06-28T18:48:11.847Z",
+    "updated_at": "2025-06-28T18:48:11.847Z",
+    "is_active": true,
+    "name": "FAMILY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 69,
+  "fields": {
+    "created_at": "2025-06-28T18:48:12.667Z",
+    "updated_at": "2025-06-28T18:48:12.667Z",
+    "is_active": true,
+    "name": "FASHION"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 70,
+  "fields": {
+    "created_at": "2025-06-28T18:48:13.487Z",
+    "updated_at": "2025-06-28T18:48:13.487Z",
+    "is_active": true,
+    "name": "FASHION BAGS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 71,
+  "fields": {
+    "created_at": "2025-06-28T18:48:14.408Z",
+    "updated_at": "2025-06-28T18:48:14.408Z",
+    "is_active": true,
+    "name": "FASHION BOOTS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 72,
+  "fields": {
+    "created_at": "2025-06-28T18:48:15.228Z",
+    "updated_at": "2025-06-28T18:48:15.228Z",
+    "is_active": true,
+    "name": "FASHION CHINO"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 73,
+  "fields": {
+    "created_at": "2025-06-28T18:48:16.046Z",
+    "updated_at": "2025-06-28T18:48:16.046Z",
+    "is_active": true,
+    "name": "FASHION DENIM"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 74,
+  "fields": {
+    "created_at": "2025-06-28T18:48:16.866Z",
+    "updated_at": "2025-06-28T18:48:16.866Z",
+    "is_active": true,
+    "name": "FASHION JACKET"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 75,
+  "fields": {
+    "created_at": "2025-06-28T18:48:17.787Z",
+    "updated_at": "2025-06-28T18:48:17.787Z",
+    "is_active": true,
+    "name": "FASHION JOGGER"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 76,
+  "fields": {
+    "created_at": "2025-06-28T18:48:18.605Z",
+    "updated_at": "2025-06-28T18:48:18.605Z",
+    "is_active": true,
+    "name": "FASHION MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 77,
+  "fields": {
+    "created_at": "2025-06-28T18:48:19.425Z",
+    "updated_at": "2025-06-28T18:48:19.425Z",
+    "is_active": true,
+    "name": "FASHION OUTERWEAR"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 78,
+  "fields": {
+    "created_at": "2025-06-28T18:48:20.245Z",
+    "updated_at": "2025-06-28T18:48:20.245Z",
+    "is_active": true,
+    "name": "FASHION SANDALS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 79,
+  "fields": {
+    "created_at": "2025-06-28T18:48:21.067Z",
+    "updated_at": "2025-06-28T18:48:21.067Z",
+    "is_active": true,
+    "name": "FASHION SETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 80,
+  "fields": {
+    "created_at": "2025-06-28T18:48:21.868Z",
+    "updated_at": "2025-06-28T18:48:21.868Z",
+    "is_active": true,
+    "name": "FLAT BALLETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 81,
+  "fields": {
+    "created_at": "2025-06-28T18:48:22.702Z",
+    "updated_at": "2025-06-28T18:48:22.702Z",
+    "is_active": true,
+    "name": "FLAT SANDALS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 82,
+  "fields": {
+    "created_at": "2025-06-28T18:48:23.521Z",
+    "updated_at": "2025-06-28T18:48:23.521Z",
+    "is_active": true,
+    "name": "FLEECE"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 83,
+  "fields": {
+    "created_at": "2025-06-28T18:48:24.447Z",
+    "updated_at": "2025-06-28T18:48:24.447Z",
+    "is_active": true,
+    "name": "FLEECE LINED"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 84,
+  "fields": {
+    "created_at": "2025-06-28T18:48:25.262Z",
+    "updated_at": "2025-06-28T18:48:25.262Z",
+    "is_active": true,
+    "name": "FLEECE LINED MULTIPK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 85,
+  "fields": {
+    "created_at": "2025-06-28T18:48:26.082Z",
+    "updated_at": "2025-06-28T18:48:26.082Z",
+    "is_active": true,
+    "name": "FLEECE MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 86,
+  "fields": {
+    "created_at": "2025-06-28T18:48:26.904Z",
+    "updated_at": "2025-06-28T18:48:26.904Z",
+    "is_active": true,
+    "name": "FULL LENGTH"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 87,
+  "fields": {
+    "created_at": "2025-06-28T18:48:27.720Z",
+    "updated_at": "2025-06-28T18:48:27.720Z",
+    "is_active": true,
+    "name": "FULL LENGTH MULTIPK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 88,
+  "fields": {
+    "created_at": "2025-06-28T18:48:28.539Z",
+    "updated_at": "2025-06-28T18:48:28.539Z",
+    "is_active": true,
+    "name": "FULL ZIP"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 89,
+  "fields": {
+    "created_at": "2025-06-28T18:48:29.357Z",
+    "updated_at": "2025-06-28T18:48:29.357Z",
+    "is_active": true,
+    "name": "GIRLS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 90,
+  "fields": {
+    "created_at": "2025-06-28T18:48:30.177Z",
+    "updated_at": "2025-06-28T18:48:30.177Z",
+    "is_active": true,
+    "name": "GIRLS NOVELTY ACCS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 91,
+  "fields": {
+    "created_at": "2025-06-28T18:48:30.997Z",
+    "updated_at": "2025-06-28T18:48:30.997Z",
+    "is_active": true,
+    "name": "GLITTER FLIP FLOPS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 92,
+  "fields": {
+    "created_at": "2025-06-28T18:48:31.817Z",
+    "updated_at": "2025-06-28T18:48:31.817Z",
+    "is_active": true,
+    "name": "GLOVES/MITTENS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 93,
+  "fields": {
+    "created_at": "2025-06-28T18:48:32.639Z",
+    "updated_at": "2025-06-28T18:48:32.639Z",
+    "is_active": true,
+    "name": "GLOVES/MITTENS MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 94,
+  "fields": {
+    "created_at": "2025-06-28T18:48:33.557Z",
+    "updated_at": "2025-06-28T18:48:33.557Z",
+    "is_active": true,
+    "name": "HALLOWEEN"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 95,
+  "fields": {
+    "created_at": "2025-06-28T18:48:34.382Z",
+    "updated_at": "2025-06-28T18:48:34.382Z",
+    "is_active": true,
+    "name": "HARVEST THANKSGIVING"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 96,
+  "fields": {
+    "created_at": "2025-06-28T18:48:35.195Z",
+    "updated_at": "2025-06-28T18:48:35.195Z",
+    "is_active": true,
+    "name": "HATS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 97,
+  "fields": {
+    "created_at": "2025-06-28T18:48:36.014Z",
+    "updated_at": "2025-06-28T18:48:36.014Z",
+    "is_active": true,
+    "name": "HATS MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 98,
+  "fields": {
+    "created_at": "2025-06-28T18:48:36.958Z",
+    "updated_at": "2025-06-28T18:48:36.958Z",
+    "is_active": true,
+    "name": "HEELED SANDALS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 99,
+  "fields": {
+    "created_at": "2025-06-28T18:48:37.858Z",
+    "updated_at": "2025-06-28T18:48:37.858Z",
+    "is_active": true,
+    "name": "HI TOP"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 100,
+  "fields": {
+    "created_at": "2025-06-28T18:48:38.688Z",
+    "updated_at": "2025-06-28T18:48:38.688Z",
+    "is_active": true,
+    "name": "JACKET SET"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 101,
+  "fields": {
+    "created_at": "2025-06-28T18:48:39.502Z",
+    "updated_at": "2025-06-28T18:48:39.502Z",
+    "is_active": true,
+    "name": "JELLY SANDALS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 102,
+  "fields": {
+    "created_at": "2025-06-28T18:48:40.320Z",
+    "updated_at": "2025-06-28T18:48:40.320Z",
+    "is_active": true,
+    "name": "JOGGER"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 103,
+  "fields": {
+    "created_at": "2025-06-28T18:48:41.099Z",
+    "updated_at": "2025-06-28T18:48:41.100Z",
+    "is_active": true,
+    "name": "KEY ITEM"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 104,
+  "fields": {
+    "created_at": "2025-06-28T18:48:41.884Z",
+    "updated_at": "2025-06-28T18:48:41.884Z",
+    "is_active": true,
+    "name": "KEY ITEM JACKET"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 105,
+  "fields": {
+    "created_at": "2025-06-28T18:48:42.641Z",
+    "updated_at": "2025-06-28T18:48:42.641Z",
+    "is_active": true,
+    "name": "KEY ITEM MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 106,
+  "fields": {
+    "created_at": "2025-06-28T18:48:43.490Z",
+    "updated_at": "2025-06-28T18:48:43.490Z",
+    "is_active": true,
+    "name": "KEY ITEM OUTERWEAR"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 107,
+  "fields": {
+    "created_at": "2025-06-28T18:48:44.308Z",
+    "updated_at": "2025-06-28T18:48:44.308Z",
+    "is_active": true,
+    "name": "KEY ITEM SHERPA"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 108,
+  "fields": {
+    "created_at": "2025-06-28T18:48:45.128Z",
+    "updated_at": "2025-06-28T18:48:45.128Z",
+    "is_active": true,
+    "name": "KI FLARE MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 109,
+  "fields": {
+    "created_at": "2025-06-28T18:48:45.947Z",
+    "updated_at": "2025-06-28T18:48:45.947Z",
+    "is_active": true,
+    "name": "KNIT ACTIVE PANTS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 110,
+  "fields": {
+    "created_at": "2025-06-28T18:48:46.771Z",
+    "updated_at": "2025-06-28T18:48:46.772Z",
+    "is_active": true,
+    "name": "KNIT ROMPERS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 111,
+  "fields": {
+    "created_at": "2025-06-28T18:48:47.521Z",
+    "updated_at": "2025-06-28T18:48:47.521Z",
+    "is_active": true,
+    "name": "KNIT SHORTS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 112,
+  "fields": {
+    "created_at": "2025-06-28T18:48:48.507Z",
+    "updated_at": "2025-06-28T18:48:48.507Z",
+    "is_active": true,
+    "name": "KNIT SHORTS MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 113,
+  "fields": {
+    "created_at": "2025-06-28T18:48:49.325Z",
+    "updated_at": "2025-06-28T18:48:49.325Z",
+    "is_active": true,
+    "name": "KNIT WAISTBAND DENIM"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 114,
+  "fields": {
+    "created_at": "2025-06-28T18:48:50.146Z",
+    "updated_at": "2025-06-28T18:48:50.146Z",
+    "is_active": true,
+    "name": "KNIT WAISTBAND PRINT"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 115,
+  "fields": {
+    "created_at": "2025-06-28T18:48:50.965Z",
+    "updated_at": "2025-06-28T18:48:50.965Z",
+    "is_active": true,
+    "name": "KNIT WAISTBAND SOLID"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 116,
+  "fields": {
+    "created_at": "2025-06-28T18:48:51.784Z",
+    "updated_at": "2025-06-28T18:48:51.784Z",
+    "is_active": true,
+    "name": "KNIT WB DENIM MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 117,
+  "fields": {
+    "created_at": "2025-06-28T18:48:52.569Z",
+    "updated_at": "2025-06-28T18:48:52.569Z",
+    "is_active": true,
+    "name": "KNIT WB PRINT MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 118,
+  "fields": {
+    "created_at": "2025-06-28T18:48:53.423Z",
+    "updated_at": "2025-06-28T18:48:53.423Z",
+    "is_active": true,
+    "name": "KNIT WB SOLID MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 119,
+  "fields": {
+    "created_at": "2025-06-28T18:48:54.241Z",
+    "updated_at": "2025-06-28T18:48:54.242Z",
+    "is_active": true,
+    "name": "LONG SLEEVE"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 120,
+  "fields": {
+    "created_at": "2025-06-28T18:48:55.070Z",
+    "updated_at": "2025-06-28T18:48:55.070Z",
+    "is_active": true,
+    "name": "LONG SLEEVE/LONG"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 121,
+  "fields": {
+    "created_at": "2025-06-28T18:48:55.852Z",
+    "updated_at": "2025-06-28T18:48:55.852Z",
+    "is_active": true,
+    "name": "LOW TOP"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 122,
+  "fields": {
+    "created_at": "2025-06-28T18:48:56.699Z",
+    "updated_at": "2025-06-28T18:48:56.699Z",
+    "is_active": true,
+    "name": "LS POLO"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 123,
+  "fields": {
+    "created_at": "2025-06-28T18:48:57.518Z",
+    "updated_at": "2025-06-28T18:48:57.518Z",
+    "is_active": true,
+    "name": "LS POLO MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 124,
+  "fields": {
+    "created_at": "2025-06-28T18:48:58.338Z",
+    "updated_at": "2025-06-28T18:48:58.338Z",
+    "is_active": true,
+    "name": "MARYJANE"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 125,
+  "fields": {
+    "created_at": "2025-06-28T18:48:59.156Z",
+    "updated_at": "2025-06-28T18:48:59.156Z",
+    "is_active": true,
+    "name": "MIX AND MATCH SETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 126,
+  "fields": {
+    "created_at": "2025-06-28T18:48:59.976Z",
+    "updated_at": "2025-06-28T18:48:59.976Z",
+    "is_active": true,
+    "name": "MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 127,
+  "fields": {
+    "created_at": "2025-06-28T18:49:00.773Z",
+    "updated_at": "2025-06-28T18:49:00.773Z",
+    "is_active": true,
+    "name": "MULTIPACK TIES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 128,
+  "fields": {
+    "created_at": "2025-06-28T18:49:01.512Z",
+    "updated_at": "2025-06-28T18:49:01.512Z",
+    "is_active": true,
+    "name": "MULTIPK ROMPERS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 129,
+  "fields": {
+    "created_at": "2025-06-28T18:49:02.331Z",
+    "updated_at": "2025-06-28T18:49:02.331Z",
+    "is_active": true,
+    "name": "NB HATS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 130,
+  "fields": {
+    "created_at": "2025-06-28T18:49:03.085Z",
+    "updated_at": "2025-06-28T18:49:03.085Z",
+    "is_active": true,
+    "name": "NBB SOCKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 131,
+  "fields": {
+    "created_at": "2025-06-28T18:49:03.871Z",
+    "updated_at": "2025-06-28T18:49:03.871Z",
+    "is_active": true,
+    "name": "NBG DRESSY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 132,
+  "fields": {
+    "created_at": "2025-06-28T18:49:04.765Z",
+    "updated_at": "2025-06-28T18:49:04.765Z",
+    "is_active": true,
+    "name": "NBG HAIR"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 133,
+  "fields": {
+    "created_at": "2025-06-28T18:49:06.159Z",
+    "updated_at": "2025-06-28T18:49:06.159Z",
+    "is_active": true,
+    "name": "NBG SOCKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 134,
+  "fields": {
+    "created_at": "2025-06-28T18:49:06.939Z",
+    "updated_at": "2025-06-28T18:49:06.940Z",
+    "is_active": true,
+    "name": "NIGHTGOWNS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 135,
+  "fields": {
+    "created_at": "2025-06-28T18:49:07.831Z",
+    "updated_at": "2025-06-28T18:49:07.831Z",
+    "is_active": true,
+    "name": "NOVELTY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 136,
+  "fields": {
+    "created_at": "2025-06-28T18:49:08.681Z",
+    "updated_at": "2025-06-28T18:49:08.681Z",
+    "is_active": true,
+    "name": "NOVELTY MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 137,
+  "fields": {
+    "created_at": "2025-06-28T18:49:09.500Z",
+    "updated_at": "2025-06-28T18:49:09.500Z",
+    "is_active": true,
+    "name": "ONESIE"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 138,
+  "fields": {
+    "created_at": "2025-06-28T18:49:10.319Z",
+    "updated_at": "2025-06-28T18:49:10.319Z",
+    "is_active": true,
+    "name": "PLAYGROUND SANDALS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 139,
+  "fields": {
+    "created_at": "2025-06-28T18:49:11.137Z",
+    "updated_at": "2025-06-28T18:49:11.137Z",
+    "is_active": true,
+    "name": "PLAYWEAR SETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 140,
+  "fields": {
+    "created_at": "2025-06-28T18:49:11.926Z",
+    "updated_at": "2025-06-28T18:49:11.926Z",
+    "is_active": true,
+    "name": "PRINTED"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 141,
+  "fields": {
+    "created_at": "2025-06-28T18:49:12.791Z",
+    "updated_at": "2025-06-28T18:49:12.791Z",
+    "is_active": true,
+    "name": "PULL ON"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 142,
+  "fields": {
+    "created_at": "2025-06-28T18:49:13.586Z",
+    "updated_at": "2025-06-28T18:49:13.587Z",
+    "is_active": true,
+    "name": "PULLOVER"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 143,
+  "fields": {
+    "created_at": "2025-06-28T18:49:14.415Z",
+    "updated_at": "2025-06-28T18:49:14.415Z",
+    "is_active": true,
+    "name": "PULLOVER MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 144,
+  "fields": {
+    "created_at": "2025-06-28T18:49:15.234Z",
+    "updated_at": "2025-06-28T18:49:15.234Z",
+    "is_active": true,
+    "name": "ROBES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 145,
+  "fields": {
+    "created_at": "2025-06-28T18:49:16.052Z",
+    "updated_at": "2025-06-28T18:49:16.052Z",
+    "is_active": true,
+    "name": "SANDALS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 146,
+  "fields": {
+    "created_at": "2025-06-28T18:49:16.873Z",
+    "updated_at": "2025-06-28T18:49:16.873Z",
+    "is_active": true,
+    "name": "SEPARATES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 147,
+  "fields": {
+    "created_at": "2025-06-28T18:49:17.691Z",
+    "updated_at": "2025-06-28T18:49:17.691Z",
+    "is_active": true,
+    "name": "SETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 148,
+  "fields": {
+    "created_at": "2025-06-28T18:49:18.510Z",
+    "updated_at": "2025-06-28T18:49:18.510Z",
+    "is_active": true,
+    "name": "SHERPA"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 149,
+  "fields": {
+    "created_at": "2025-06-28T18:49:19.329Z",
+    "updated_at": "2025-06-28T18:49:19.329Z",
+    "is_active": true,
+    "name": "SHORT"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 150,
+  "fields": {
+    "created_at": "2025-06-28T18:49:20.149Z",
+    "updated_at": "2025-06-28T18:49:20.149Z",
+    "is_active": true,
+    "name": "SHORT MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 151,
+  "fields": {
+    "created_at": "2025-06-28T18:49:20.968Z",
+    "updated_at": "2025-06-28T18:49:20.968Z",
+    "is_active": true,
+    "name": "SHORT SLEEVE"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 152,
+  "fields": {
+    "created_at": "2025-06-28T18:49:21.765Z",
+    "updated_at": "2025-06-28T18:49:21.765Z",
+    "is_active": true,
+    "name": "SHORT SLEEVE/LONG"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 153,
+  "fields": {
+    "created_at": "2025-06-28T18:49:22.607Z",
+    "updated_at": "2025-06-28T18:49:22.607Z",
+    "is_active": true,
+    "name": "SHORT SLEEVE/SHORT"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 154,
+  "fields": {
+    "created_at": "2025-06-28T18:49:23.426Z",
+    "updated_at": "2025-06-28T18:49:23.426Z",
+    "is_active": true,
+    "name": "SHORTALL/OVERALL"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 155,
+  "fields": {
+    "created_at": "2025-06-28T18:49:24.245Z",
+    "updated_at": "2025-06-28T18:49:24.245Z",
+    "is_active": true,
+    "name": "SKIMMER DENIM"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 156,
+  "fields": {
+    "created_at": "2025-06-28T18:49:24.963Z",
+    "updated_at": "2025-06-28T18:49:24.963Z",
+    "is_active": true,
+    "name": "SKIMMER DENIM MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 157,
+  "fields": {
+    "created_at": "2025-06-28T18:49:25.781Z",
+    "updated_at": "2025-06-28T18:49:25.781Z",
+    "is_active": true,
+    "name": "SKIMMER PRINT"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 158,
+  "fields": {
+    "created_at": "2025-06-28T18:49:26.703Z",
+    "updated_at": "2025-06-28T18:49:26.703Z",
+    "is_active": true,
+    "name": "SKIMMER SOLID"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 159,
+  "fields": {
+    "created_at": "2025-06-28T18:49:27.527Z",
+    "updated_at": "2025-06-28T18:49:27.527Z",
+    "is_active": true,
+    "name": "SKIMMER SOLID MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 160,
+  "fields": {
+    "created_at": "2025-06-28T18:49:28.341Z",
+    "updated_at": "2025-06-28T18:49:28.341Z",
+    "is_active": true,
+    "name": "SKINNY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 161,
+  "fields": {
+    "created_at": "2025-06-28T18:49:29.161Z",
+    "updated_at": "2025-06-28T18:49:29.161Z",
+    "is_active": true,
+    "name": "SKINNY CHINO"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 162,
+  "fields": {
+    "created_at": "2025-06-28T18:49:29.980Z",
+    "updated_at": "2025-06-28T18:49:29.980Z",
+    "is_active": true,
+    "name": "SKINNY MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 163,
+  "fields": {
+    "created_at": "2025-06-28T18:49:30.799Z",
+    "updated_at": "2025-06-28T18:49:30.799Z",
+    "is_active": true,
+    "name": "SKIRT SETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 164,
+  "fields": {
+    "created_at": "2025-06-28T18:49:31.618Z",
+    "updated_at": "2025-06-28T18:49:31.618Z",
+    "is_active": true,
+    "name": "SKIRTS FASHION"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 165,
+  "fields": {
+    "created_at": "2025-06-28T18:49:32.437Z",
+    "updated_at": "2025-06-28T18:49:32.437Z",
+    "is_active": true,
+    "name": "SKORT"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 166,
+  "fields": {
+    "created_at": "2025-06-28T18:49:33.122Z",
+    "updated_at": "2025-06-28T18:49:33.122Z",
+    "is_active": true,
+    "name": "SKORT MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 167,
+  "fields": {
+    "created_at": "2025-06-28T18:49:33.876Z",
+    "updated_at": "2025-06-28T18:49:33.876Z",
+    "is_active": true,
+    "name": "SLIDES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 168,
+  "fields": {
+    "created_at": "2025-06-28T18:49:34.690Z",
+    "updated_at": "2025-06-28T18:49:34.690Z",
+    "is_active": true,
+    "name": "SLIP ONS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 169,
+  "fields": {
+    "created_at": "2025-06-28T18:49:35.509Z",
+    "updated_at": "2025-06-28T18:49:35.509Z",
+    "is_active": true,
+    "name": "SLIPPERS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 170,
+  "fields": {
+    "created_at": "2025-06-28T18:49:36.329Z",
+    "updated_at": "2025-06-28T18:49:36.329Z",
+    "is_active": true,
+    "name": "SNIT"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 171,
+  "fields": {
+    "created_at": "2025-06-28T18:49:37.250Z",
+    "updated_at": "2025-06-28T18:49:37.250Z",
+    "is_active": true,
+    "name": "SNOW PANT"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 172,
+  "fields": {
+    "created_at": "2025-06-28T18:49:38.039Z",
+    "updated_at": "2025-06-28T18:49:38.039Z",
+    "is_active": true,
+    "name": "SOLID"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 173,
+  "fields": {
+    "created_at": "2025-06-28T18:49:38.889Z",
+    "updated_at": "2025-06-28T18:49:38.889Z",
+    "is_active": true,
+    "name": "SOLID CHINO"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 174,
+  "fields": {
+    "created_at": "2025-06-28T18:49:39.708Z",
+    "updated_at": "2025-06-28T18:49:39.708Z",
+    "is_active": true,
+    "name": "SOLID CHINO MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 175,
+  "fields": {
+    "created_at": "2025-06-28T18:49:40.735Z",
+    "updated_at": "2025-06-28T18:49:40.735Z",
+    "is_active": true,
+    "name": "SOLID JOGGER"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 176,
+  "fields": {
+    "created_at": "2025-06-28T18:49:41.551Z",
+    "updated_at": "2025-06-28T18:49:41.551Z",
+    "is_active": true,
+    "name": "SS POLO"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 177,
+  "fields": {
+    "created_at": "2025-06-28T18:49:42.335Z",
+    "updated_at": "2025-06-28T18:49:42.335Z",
+    "is_active": true,
+    "name": "SS POLO MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 178,
+  "fields": {
+    "created_at": "2025-06-28T18:49:43.107Z",
+    "updated_at": "2025-06-28T18:49:43.107Z",
+    "is_active": true,
+    "name": "ST PATS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 179,
+  "fields": {
+    "created_at": "2025-06-28T18:49:43.905Z",
+    "updated_at": "2025-06-28T18:49:43.905Z",
+    "is_active": true,
+    "name": "STRAIGHT MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 180,
+  "fields": {
+    "created_at": "2025-06-28T18:49:44.726Z",
+    "updated_at": "2025-06-28T18:49:44.726Z",
+    "is_active": true,
+    "name": "STRCH SUPR SKNY MULT"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 181,
+  "fields": {
+    "created_at": "2025-06-28T18:49:45.544Z",
+    "updated_at": "2025-06-28T18:49:45.544Z",
+    "is_active": true,
+    "name": "STRETCH SKINNY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 182,
+  "fields": {
+    "created_at": "2025-06-28T18:49:46.364Z",
+    "updated_at": "2025-06-28T18:49:46.364Z",
+    "is_active": true,
+    "name": "STRETCH SKINNY MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 183,
+  "fields": {
+    "created_at": "2025-06-28T18:49:47.184Z",
+    "updated_at": "2025-06-28T18:49:47.184Z",
+    "is_active": true,
+    "name": "STRETCH STRAIGHT"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 184,
+  "fields": {
+    "created_at": "2025-06-28T18:49:48.077Z",
+    "updated_at": "2025-06-28T18:49:48.077Z",
+    "is_active": true,
+    "name": "STRETCH STRGHT MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 185,
+  "fields": {
+    "created_at": "2025-06-28T18:49:49.026Z",
+    "updated_at": "2025-06-28T18:49:49.026Z",
+    "is_active": true,
+    "name": "STRETCH SUPER SKINNY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 186,
+  "fields": {
+    "created_at": "2025-06-28T18:49:49.794Z",
+    "updated_at": "2025-06-28T18:49:49.794Z",
+    "is_active": true,
+    "name": "STRIPE"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 187,
+  "fields": {
+    "created_at": "2025-06-28T18:49:50.665Z",
+    "updated_at": "2025-06-28T18:49:50.665Z",
+    "is_active": true,
+    "name": "SUPER SKINNY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 188,
+  "fields": {
+    "created_at": "2025-06-28T18:49:51.483Z",
+    "updated_at": "2025-06-28T18:49:51.483Z",
+    "is_active": true,
+    "name": "SUPER SKINNY MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 189,
+  "fields": {
+    "created_at": "2025-06-28T18:49:52.307Z",
+    "updated_at": "2025-06-28T18:49:52.307Z",
+    "is_active": true,
+    "name": "SWIMWEAR"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 190,
+  "fields": {
+    "created_at": "2025-06-28T18:49:53.123Z",
+    "updated_at": "2025-06-28T18:49:53.123Z",
+    "is_active": true,
+    "name": "SWIMWEAR MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 191,
+  "fields": {
+    "created_at": "2025-06-28T18:49:53.942Z",
+    "updated_at": "2025-06-28T18:49:53.942Z",
+    "is_active": true,
+    "name": "SYNTHETIC"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 192,
+  "fields": {
+    "created_at": "2025-06-28T18:49:54.761Z",
+    "updated_at": "2025-06-28T18:49:54.761Z",
+    "is_active": true,
+    "name": "SYNTHETIC MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 193,
+  "fields": {
+    "created_at": "2025-06-28T18:49:55.559Z",
+    "updated_at": "2025-06-28T18:49:55.559Z",
+    "is_active": true,
+    "name": "TABLE"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 194,
+  "fields": {
+    "created_at": "2025-06-28T18:49:56.399Z",
+    "updated_at": "2025-06-28T18:49:56.400Z",
+    "is_active": true,
+    "name": "TALL BOOTS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 195,
+  "fields": {
+    "created_at": "2025-06-28T18:49:57.219Z",
+    "updated_at": "2025-06-28T18:49:57.219Z",
+    "is_active": true,
+    "name": "TANKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 196,
+  "fields": {
+    "created_at": "2025-06-28T18:49:58.011Z",
+    "updated_at": "2025-06-28T18:49:58.011Z",
+    "is_active": true,
+    "name": "TANKS MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 197,
+  "fields": {
+    "created_at": "2025-06-28T18:49:58.959Z",
+    "updated_at": "2025-06-28T18:49:58.959Z",
+    "is_active": true,
+    "name": "TB COZY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 198,
+  "fields": {
+    "created_at": "2025-06-28T18:49:59.779Z",
+    "updated_at": "2025-06-28T18:49:59.779Z",
+    "is_active": true,
+    "name": "TB HATS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 199,
+  "fields": {
+    "created_at": "2025-06-28T18:50:00.647Z",
+    "updated_at": "2025-06-28T18:50:00.647Z",
+    "is_active": true,
+    "name": "TB SOCKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 200,
+  "fields": {
+    "created_at": "2025-06-28T18:50:01.383Z",
+    "updated_at": "2025-06-28T18:50:01.383Z",
+    "is_active": true,
+    "name": "TB SUNGLASSES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 201,
+  "fields": {
+    "created_at": "2025-06-28T18:50:02.236Z",
+    "updated_at": "2025-06-28T18:50:02.236Z",
+    "is_active": true,
+    "name": "TEES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 202,
+  "fields": {
+    "created_at": "2025-06-28T18:50:03.020Z",
+    "updated_at": "2025-06-28T18:50:03.020Z",
+    "is_active": true,
+    "name": "TEES MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 203,
+  "fields": {
+    "created_at": "2025-06-28T18:50:03.977Z",
+    "updated_at": "2025-06-28T18:50:03.977Z",
+    "is_active": true,
+    "name": "TG DRESSY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 204,
+  "fields": {
+    "created_at": "2025-06-28T18:50:04.797Z",
+    "updated_at": "2025-06-28T18:50:04.797Z",
+    "is_active": true,
+    "name": "TG HAIR"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 205,
+  "fields": {
+    "created_at": "2025-06-28T18:50:05.619Z",
+    "updated_at": "2025-06-28T18:50:05.619Z",
+    "is_active": true,
+    "name": "TG HAIR MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 206,
+  "fields": {
+    "created_at": "2025-06-28T18:50:06.434Z",
+    "updated_at": "2025-06-28T18:50:06.434Z",
+    "is_active": true,
+    "name": "TG HATS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 207,
+  "fields": {
+    "created_at": "2025-06-28T18:50:07.257Z",
+    "updated_at": "2025-06-28T18:50:07.257Z",
+    "is_active": true,
+    "name": "TG SOCKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 208,
+  "fields": {
+    "created_at": "2025-06-28T18:50:08.077Z",
+    "updated_at": "2025-06-28T18:50:08.077Z",
+    "is_active": true,
+    "name": "TG SUNGLASSES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 209,
+  "fields": {
+    "created_at": "2025-06-28T18:50:08.893Z",
+    "updated_at": "2025-06-28T18:50:08.893Z",
+    "is_active": true,
+    "name": "TG TIGHTS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 210,
+  "fields": {
+    "created_at": "2025-06-28T18:50:09.711Z",
+    "updated_at": "2025-06-28T18:50:09.711Z",
+    "is_active": true,
+    "name": "TG TIGHTS MULTI"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 211,
+  "fields": {
+    "created_at": "2025-06-28T18:50:10.633Z",
+    "updated_at": "2025-06-28T18:50:10.634Z",
+    "is_active": true,
+    "name": "TIES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 212,
+  "fields": {
+    "created_at": "2025-06-28T18:50:11.533Z",
+    "updated_at": "2025-06-28T18:50:11.533Z",
+    "is_active": true,
+    "name": "TODDLER"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 213,
+  "fields": {
+    "created_at": "2025-06-28T18:50:12.272Z",
+    "updated_at": "2025-06-28T18:50:12.272Z",
+    "is_active": true,
+    "name": "TODDLER MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 214,
+  "fields": {
+    "created_at": "2025-06-28T18:50:13.090Z",
+    "updated_at": "2025-06-28T18:50:13.090Z",
+    "is_active": true,
+    "name": "TWEEN"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 215,
+  "fields": {
+    "created_at": "2025-06-28T18:50:13.910Z",
+    "updated_at": "2025-06-28T18:50:13.910Z",
+    "is_active": true,
+    "name": "UNIFORM"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 216,
+  "fields": {
+    "created_at": "2025-06-28T18:50:14.729Z",
+    "updated_at": "2025-06-28T18:50:14.729Z",
+    "is_active": true,
+    "name": "UNIFORM MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 217,
+  "fields": {
+    "created_at": "2025-06-28T18:50:15.548Z",
+    "updated_at": "2025-06-28T18:50:15.548Z",
+    "is_active": true,
+    "name": "UNISEX"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 218,
+  "fields": {
+    "created_at": "2025-06-28T18:50:16.333Z",
+    "updated_at": "2025-06-28T18:50:16.333Z",
+    "is_active": true,
+    "name": "VDAY"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 219,
+  "fields": {
+    "created_at": "2025-06-28T18:50:17.186Z",
+    "updated_at": "2025-06-28T18:50:17.186Z",
+    "is_active": true,
+    "name": "WATERSHOES"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 220,
+  "fields": {
+    "created_at": "2025-06-28T18:50:18.006Z",
+    "updated_at": "2025-06-28T18:50:18.006Z",
+    "is_active": true,
+    "name": "WEATHER BOOTS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 221,
+  "fields": {
+    "created_at": "2025-06-28T18:50:18.825Z",
+    "updated_at": "2025-06-28T18:50:18.825Z",
+    "is_active": true,
+    "name": "WOVEN ROMPERS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 222,
+  "fields": {
+    "created_at": "2025-06-28T18:50:19.747Z",
+    "updated_at": "2025-06-28T18:50:19.747Z",
+    "is_active": true,
+    "name": "WOVEN SETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 223,
+  "fields": {
+    "created_at": "2025-06-28T18:50:20.668Z",
+    "updated_at": "2025-06-28T18:50:20.668Z",
+    "is_active": true,
+    "name": "WOVEN TOPS"
+  }
+},
+{
+  "model": "AmazoneMapApp.subclass",
+  "pk": 224,
+  "fields": {
+    "created_at": "2025-06-28T18:50:21.487Z",
+    "updated_at": "2025-06-28T18:50:21.487Z",
+    "is_active": true,
+    "name": "XMAS"
+  }
+}
+]

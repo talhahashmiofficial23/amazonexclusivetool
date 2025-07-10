@@ -1,0 +1,842 @@
+[
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 5,
+  "fields": {
+    "created_at": "2025-06-28T18:46:11.186Z",
+    "updated_at": "2025-06-28T18:46:11.186Z",
+    "is_active": true,
+    "name": "ACTIVE TOPS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 6,
+  "fields": {
+    "created_at": "2025-06-28T18:46:11.869Z",
+    "updated_at": "2025-06-28T18:46:11.869Z",
+    "is_active": true,
+    "name": "BALLETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 7,
+  "fields": {
+    "created_at": "2025-06-28T18:46:12.621Z",
+    "updated_at": "2025-06-28T18:46:12.621Z",
+    "is_active": true,
+    "name": "BASIC DENIM BOTTOMS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 9,
+  "fields": {
+    "created_at": "2025-06-28T18:46:14.393Z",
+    "updated_at": "2025-06-28T18:46:14.393Z",
+    "is_active": true,
+    "name": "BB COLD WEATHER"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 10,
+  "fields": {
+    "created_at": "2025-06-28T18:46:15.213Z",
+    "updated_at": "2025-06-28T18:46:15.214Z",
+    "is_active": true,
+    "name": "BELTS/TIES"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 11,
+  "fields": {
+    "created_at": "2025-06-28T18:46:16.003Z",
+    "updated_at": "2025-06-28T18:46:16.003Z",
+    "is_active": true,
+    "name": "BG BACKPACKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 12,
+  "fields": {
+    "created_at": "2025-06-28T18:46:16.861Z",
+    "updated_at": "2025-06-28T18:46:16.861Z",
+    "is_active": true,
+    "name": "BG COLD WEATHER"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 13,
+  "fields": {
+    "created_at": "2025-06-28T18:46:17.674Z",
+    "updated_at": "2025-06-28T18:46:17.674Z",
+    "is_active": true,
+    "name": "BOOTS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 14,
+  "fields": {
+    "created_at": "2025-06-28T18:46:18.489Z",
+    "updated_at": "2025-06-28T18:46:18.489Z",
+    "is_active": true,
+    "name": "BOYS COTTON SLEEP"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 15,
+  "fields": {
+    "created_at": "2025-06-28T18:46:19.413Z",
+    "updated_at": "2025-06-28T18:46:19.413Z",
+    "is_active": true,
+    "name": "BOYS COTTON SLEEP MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 16,
+  "fields": {
+    "created_at": "2025-06-28T18:46:20.117Z",
+    "updated_at": "2025-06-28T18:46:20.117Z",
+    "is_active": true,
+    "name": "BOYS FASH SLEEPWEAR"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 17,
+  "fields": {
+    "created_at": "2025-06-28T18:46:20.844Z",
+    "updated_at": "2025-06-28T18:46:20.844Z",
+    "is_active": true,
+    "name": "BOYS FASH SLEEPWEAR MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 18,
+  "fields": {
+    "created_at": "2025-06-28T18:46:21.663Z",
+    "updated_at": "2025-06-28T18:46:21.663Z",
+    "is_active": true,
+    "name": "BOYS SOCKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 19,
+  "fields": {
+    "created_at": "2025-06-28T18:46:22.482Z",
+    "updated_at": "2025-06-28T18:46:22.482Z",
+    "is_active": true,
+    "name": "BOYS UNDERWEAR"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 20,
+  "fields": {
+    "created_at": "2025-06-28T18:46:23.301Z",
+    "updated_at": "2025-06-28T18:46:23.301Z",
+    "is_active": true,
+    "name": "CASUAL"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 21,
+  "fields": {
+    "created_at": "2025-06-28T18:46:24.122Z",
+    "updated_at": "2025-06-28T18:46:24.122Z",
+    "is_active": true,
+    "name": "COTTON SLEEP"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 22,
+  "fields": {
+    "created_at": "2025-06-28T18:46:25.043Z",
+    "updated_at": "2025-06-28T18:46:25.043Z",
+    "is_active": true,
+    "name": "DRESSES"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 23,
+  "fields": {
+    "created_at": "2025-06-28T18:46:25.964Z",
+    "updated_at": "2025-06-28T18:46:25.964Z",
+    "is_active": true,
+    "name": "FASHION BAGS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 24,
+  "fields": {
+    "created_at": "2025-06-28T18:46:26.783Z",
+    "updated_at": "2025-06-28T18:46:26.783Z",
+    "is_active": true,
+    "name": "FASHION DENIM"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 25,
+  "fields": {
+    "created_at": "2025-06-28T18:46:27.706Z",
+    "updated_at": "2025-06-28T18:46:27.706Z",
+    "is_active": true,
+    "name": "FASHION SLEEP"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 26,
+  "fields": {
+    "created_at": "2025-06-28T18:46:28.485Z",
+    "updated_at": "2025-06-28T18:46:28.485Z",
+    "is_active": true,
+    "name": "FLIP FLOPS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 27,
+  "fields": {
+    "created_at": "2025-06-28T18:46:29.241Z",
+    "updated_at": "2025-06-28T18:46:29.241Z",
+    "is_active": true,
+    "name": "GIRLS COTTON SLEEP"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 28,
+  "fields": {
+    "created_at": "2025-06-28T18:46:29.964Z",
+    "updated_at": "2025-06-28T18:46:29.964Z",
+    "is_active": true,
+    "name": "GIRLS COTTON SLEEP MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 29,
+  "fields": {
+    "created_at": "2025-06-28T18:46:30.763Z",
+    "updated_at": "2025-06-28T18:46:30.763Z",
+    "is_active": true,
+    "name": "GIRLS FASH SLEEPWEAR"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 30,
+  "fields": {
+    "created_at": "2025-06-28T18:46:31.596Z",
+    "updated_at": "2025-06-28T18:46:31.596Z",
+    "is_active": true,
+    "name": "GIRLS FASH SLEEPWEAR MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 31,
+  "fields": {
+    "created_at": "2025-06-28T18:46:32.415Z",
+    "updated_at": "2025-06-28T18:46:32.415Z",
+    "is_active": true,
+    "name": "GIRLS SOCKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 32,
+  "fields": {
+    "created_at": "2025-06-28T18:46:33.139Z",
+    "updated_at": "2025-06-28T18:46:33.139Z",
+    "is_active": true,
+    "name": "GIRLS UNDERWEAR"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 33,
+  "fields": {
+    "created_at": "2025-06-28T18:46:33.856Z",
+    "updated_at": "2025-06-28T18:46:33.856Z",
+    "is_active": true,
+    "name": "HAIR"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 34,
+  "fields": {
+    "created_at": "2025-06-28T18:46:34.549Z",
+    "updated_at": "2025-06-28T18:46:34.549Z",
+    "is_active": true,
+    "name": "HATS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 35,
+  "fields": {
+    "created_at": "2025-06-28T18:46:35.274Z",
+    "updated_at": "2025-06-28T18:46:35.274Z",
+    "is_active": true,
+    "name": "JEGGINGS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 36,
+  "fields": {
+    "created_at": "2025-06-28T18:46:36.069Z",
+    "updated_at": "2025-06-28T18:46:36.069Z",
+    "is_active": true,
+    "name": "JEWELRY"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 37,
+  "fields": {
+    "created_at": "2025-06-28T18:46:36.819Z",
+    "updated_at": "2025-06-28T18:46:36.819Z",
+    "is_active": true,
+    "name": "LAYETTE ACCESSORIES"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 38,
+  "fields": {
+    "created_at": "2025-06-28T18:46:37.638Z",
+    "updated_at": "2025-06-28T18:46:37.638Z",
+    "is_active": true,
+    "name": "LAYETTE APPAREL"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 39,
+  "fields": {
+    "created_at": "2025-06-28T18:46:38.457Z",
+    "updated_at": "2025-06-28T18:46:38.457Z",
+    "is_active": true,
+    "name": "LEGGINGS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 40,
+  "fields": {
+    "created_at": "2025-06-28T18:46:39.211Z",
+    "updated_at": "2025-06-28T18:46:39.212Z",
+    "is_active": true,
+    "name": "LONG SLEEVE KNITS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 41,
+  "fields": {
+    "created_at": "2025-06-28T18:46:39.898Z",
+    "updated_at": "2025-06-28T18:46:39.898Z",
+    "is_active": true,
+    "name": "LS GRAPHIC TEES"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 42,
+  "fields": {
+    "created_at": "2025-06-28T18:46:40.614Z",
+    "updated_at": "2025-06-28T18:46:40.614Z",
+    "is_active": true,
+    "name": "LS MULTIPACK BODYSUITS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 43,
+  "fields": {
+    "created_at": "2025-06-28T18:46:41.291Z",
+    "updated_at": "2025-06-28T18:46:41.291Z",
+    "is_active": true,
+    "name": "MICROFLEECE BOTTOMS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 44,
+  "fields": {
+    "created_at": "2025-06-28T18:46:42.143Z",
+    "updated_at": "2025-06-28T18:46:42.143Z",
+    "is_active": true,
+    "name": "MICROFLEECE TOPS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 45,
+  "fields": {
+    "created_at": "2025-06-28T18:46:42.969Z",
+    "updated_at": "2025-06-28T18:46:42.969Z",
+    "is_active": true,
+    "name": "MIX AND MATCH BOTTOMS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 46,
+  "fields": {
+    "created_at": "2025-06-28T18:46:43.713Z",
+    "updated_at": "2025-06-28T18:46:43.713Z",
+    "is_active": true,
+    "name": "MIX AND MATCH TOPS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 47,
+  "fields": {
+    "created_at": "2025-06-28T18:46:44.499Z",
+    "updated_at": "2025-06-28T18:46:44.499Z",
+    "is_active": true,
+    "name": "MULTI KNIT BOTTOMS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 48,
+  "fields": {
+    "created_at": "2025-06-28T18:46:45.317Z",
+    "updated_at": "2025-06-28T18:46:45.317Z",
+    "is_active": true,
+    "name": "NB BLANKET SLEEPERS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 49,
+  "fields": {
+    "created_at": "2025-06-28T18:46:46.137Z",
+    "updated_at": "2025-06-28T18:46:46.137Z",
+    "is_active": true,
+    "name": "NB BLANKET SLEEPERS MULTIPACK"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 50,
+  "fields": {
+    "created_at": "2025-06-28T18:46:46.958Z",
+    "updated_at": "2025-06-28T18:46:46.958Z",
+    "is_active": true,
+    "name": "NB BOY SHOES"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 51,
+  "fields": {
+    "created_at": "2025-06-28T18:46:47.776Z",
+    "updated_at": "2025-06-28T18:46:47.776Z",
+    "is_active": true,
+    "name": "NB COTTON"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 52,
+  "fields": {
+    "created_at": "2025-06-28T18:46:48.563Z",
+    "updated_at": "2025-06-28T18:46:48.563Z",
+    "is_active": true,
+    "name": "NB COTTON MULTIPK"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 53,
+  "fields": {
+    "created_at": "2025-06-28T18:46:49.415Z",
+    "updated_at": "2025-06-28T18:46:49.415Z",
+    "is_active": true,
+    "name": "NB FASHION SLEEP"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 54,
+  "fields": {
+    "created_at": "2025-06-28T18:46:50.234Z",
+    "updated_at": "2025-06-28T18:46:50.234Z",
+    "is_active": true,
+    "name": "NB GIRL SHOES"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 55,
+  "fields": {
+    "created_at": "2025-06-28T18:46:51.053Z",
+    "updated_at": "2025-06-28T18:46:51.053Z",
+    "is_active": true,
+    "name": "NB STRETCHIE MULTIPK"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 56,
+  "fields": {
+    "created_at": "2025-06-28T18:46:51.872Z",
+    "updated_at": "2025-06-28T18:46:51.873Z",
+    "is_active": true,
+    "name": "NB STRETCHIES"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 57,
+  "fields": {
+    "created_at": "2025-06-28T18:46:52.665Z",
+    "updated_at": "2025-06-28T18:46:52.665Z",
+    "is_active": true,
+    "name": "NBB FASHION SETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 58,
+  "fields": {
+    "created_at": "2025-06-28T18:46:53.510Z",
+    "updated_at": "2025-06-28T18:46:53.510Z",
+    "is_active": true,
+    "name": "NBB PLAYWEAR SETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 59,
+  "fields": {
+    "created_at": "2025-06-28T18:46:54.331Z",
+    "updated_at": "2025-06-28T18:46:54.331Z",
+    "is_active": true,
+    "name": "NBG FASHION SETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 60,
+  "fields": {
+    "created_at": "2025-06-28T18:46:55.149Z",
+    "updated_at": "2025-06-28T18:46:55.149Z",
+    "is_active": true,
+    "name": "NBG PLAYWEAR SETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 61,
+  "fields": {
+    "created_at": "2025-06-28T18:46:55.939Z",
+    "updated_at": "2025-06-28T18:46:55.939Z",
+    "is_active": true,
+    "name": "NOVELTY ACCESSORIES"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 62,
+  "fields": {
+    "created_at": "2025-06-28T18:46:56.763Z",
+    "updated_at": "2025-06-28T18:46:56.763Z",
+    "is_active": true,
+    "name": "OUTERWEAR"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 63,
+  "fields": {
+    "created_at": "2025-06-28T18:46:57.607Z",
+    "updated_at": "2025-06-28T18:46:57.607Z",
+    "is_active": true,
+    "name": "POLOS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 64,
+  "fields": {
+    "created_at": "2025-06-28T18:46:58.425Z",
+    "updated_at": "2025-06-28T18:46:58.425Z",
+    "is_active": true,
+    "name": "ROMPERS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 65,
+  "fields": {
+    "created_at": "2025-06-28T18:46:59.251Z",
+    "updated_at": "2025-06-28T18:46:59.251Z",
+    "is_active": true,
+    "name": "SANDALS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 66,
+  "fields": {
+    "created_at": "2025-06-28T18:47:00.064Z",
+    "updated_at": "2025-06-28T18:47:00.064Z",
+    "is_active": true,
+    "name": "SETS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 67,
+  "fields": {
+    "created_at": "2025-06-28T18:47:00.883Z",
+    "updated_at": "2025-06-28T18:47:00.883Z",
+    "is_active": true,
+    "name": "SHORT SLEEVE KNITS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 68,
+  "fields": {
+    "created_at": "2025-06-28T18:47:01.703Z",
+    "updated_at": "2025-06-28T18:47:01.703Z",
+    "is_active": true,
+    "name": "SHORTS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 69,
+  "fields": {
+    "created_at": "2025-06-28T18:47:02.522Z",
+    "updated_at": "2025-06-28T18:47:02.522Z",
+    "is_active": true,
+    "name": "SKORTS/SKIRTS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 70,
+  "fields": {
+    "created_at": "2025-06-28T18:47:03.340Z",
+    "updated_at": "2025-06-28T18:47:03.340Z",
+    "is_active": true,
+    "name": "SLEEVELESS KNITS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 71,
+  "fields": {
+    "created_at": "2025-06-28T18:47:04.162Z",
+    "updated_at": "2025-06-28T18:47:04.162Z",
+    "is_active": true,
+    "name": "SLIPPERS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 72,
+  "fields": {
+    "created_at": "2025-06-28T18:47:05.092Z",
+    "updated_at": "2025-06-28T18:47:05.092Z",
+    "is_active": true,
+    "name": "SS GRAPHIC TEES"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 73,
+  "fields": {
+    "created_at": "2025-06-28T18:47:05.908Z",
+    "updated_at": "2025-06-28T18:47:05.908Z",
+    "is_active": true,
+    "name": "SS MULTIPACK BODYSUITS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 74,
+  "fields": {
+    "created_at": "2025-06-28T18:47:06.590Z",
+    "updated_at": "2025-06-28T18:47:06.590Z",
+    "is_active": true,
+    "name": "SUNGLASSES"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 75,
+  "fields": {
+    "created_at": "2025-06-28T18:47:07.301Z",
+    "updated_at": "2025-06-28T18:47:07.301Z",
+    "is_active": true,
+    "name": "SWEATERS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 76,
+  "fields": {
+    "created_at": "2025-06-28T18:47:08.013Z",
+    "updated_at": "2025-06-28T18:47:08.013Z",
+    "is_active": true,
+    "name": "SWIMWEAR"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 77,
+  "fields": {
+    "created_at": "2025-06-28T18:47:08.870Z",
+    "updated_at": "2025-06-28T18:47:08.870Z",
+    "is_active": true,
+    "name": "TB BACKPACKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 78,
+  "fields": {
+    "created_at": "2025-06-28T18:47:09.689Z",
+    "updated_at": "2025-06-28T18:47:09.689Z",
+    "is_active": true,
+    "name": "TB COLD WEATHER"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 79,
+  "fields": {
+    "created_at": "2025-06-28T18:47:10.508Z",
+    "updated_at": "2025-06-28T18:47:10.509Z",
+    "is_active": true,
+    "name": "TG BACKPACKS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 80,
+  "fields": {
+    "created_at": "2025-06-28T18:47:11.329Z",
+    "updated_at": "2025-06-28T18:47:11.329Z",
+    "is_active": true,
+    "name": "TG COLD WEATHER"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 81,
+  "fields": {
+    "created_at": "2025-06-28T18:47:12.045Z",
+    "updated_at": "2025-06-28T18:47:12.045Z",
+    "is_active": true,
+    "name": "TIGHTS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 82,
+  "fields": {
+    "created_at": "2025-06-28T18:47:12.864Z",
+    "updated_at": "2025-06-28T18:47:12.864Z",
+    "is_active": true,
+    "name": "UNISEX COLD WEATHER"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 83,
+  "fields": {
+    "created_at": "2025-06-28T18:47:13.684Z",
+    "updated_at": "2025-06-28T18:47:13.684Z",
+    "is_active": true,
+    "name": "UNISEX COTTON SLEEP"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 84,
+  "fields": {
+    "created_at": "2025-06-28T18:47:14.507Z",
+    "updated_at": "2025-06-28T18:47:14.507Z",
+    "is_active": true,
+    "name": "UNISEX FASHION SLEEP"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 85,
+  "fields": {
+    "created_at": "2025-06-28T18:47:15.201Z",
+    "updated_at": "2025-06-28T18:47:15.201Z",
+    "is_active": true,
+    "name": "WOVEN BOTTOMS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 86,
+  "fields": {
+    "created_at": "2025-06-28T18:47:15.908Z",
+    "updated_at": "2025-06-28T18:47:15.908Z",
+    "is_active": true,
+    "name": "WOVEN TOPS"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 87,
+  "fields": {
+    "created_at": "2025-07-01T08:24:41.027Z",
+    "updated_at": "2025-07-01T08:24:41.027Z",
+    "is_active": true,
+    "name": "Test"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 88,
+  "fields": {
+    "created_at": "2025-07-01T08:25:16.135Z",
+    "updated_at": "2025-07-01T08:25:16.135Z",
+    "is_active": true,
+    "name": "Jingalalalalalalalalalalalala"
+  }
+},
+{
+  "model": "AmazoneMapApp.category",
+  "pk": 89,
+  "fields": {
+    "created_at": "2025-07-01T08:41:40.937Z",
+    "updated_at": "2025-07-01T08:41:40.937Z",
+    "is_active": true,
+    "name": "TEST CAT"
+  }
+}
+]

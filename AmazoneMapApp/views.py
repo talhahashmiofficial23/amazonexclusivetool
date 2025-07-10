@@ -4,6 +4,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework_simplejwt.authentication import JWTAuthentication
+from django.db.models import OuterRef, Subquery, Max
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import AmazonExclusive, ProductPriceHistory, MasterSeason, DepartmentDivision, Category, Subclass
 from .serializers import (
@@ -16,9 +17,42 @@ from rest_framework.permissions import IsAuthenticated
 class AmazonExclusiveViewSet(viewsets.ModelViewSet):
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticated]
-    queryset = AmazonExclusive.objects.all().order_by('-id')
+    queryset = AmazonExclusive.objects.all()
     serializer_class = AmazonExclusiveSerializer
+    filter_backends = [filters.SearchFilter, DjangoFilterBackend, filters.OrderingFilter]
+    filterset_fields = {
+        'master_season': ['exact', 'in'],
+        'dept_div': ['exact', 'in'],
+        'category': ['exact', 'in'],
+        'subclass': ['exact', 'in'],
+    }
+    ordering_fields = ['list_price', 'id']
+    ordering = ['-id']  # Default ordering
 
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        
+        # Get price range parameters
+        min_price = self.request.query_params.get('min_price')
+        max_price = self.request.query_params.get('max_price')
+        
+        # Apply price range filters if provided
+        if min_price is not None:
+            try:
+                min_price = float(min_price)
+                queryset = queryset.filter(list_price__gte=min_price)
+            except (ValueError, TypeError):
+                pass
+                
+        if max_price is not None:
+            try:
+                max_price = float(max_price)
+                queryset = queryset.filter(list_price__lte=max_price)
+            except (ValueError, TypeError):
+                pass
+                
+        return queryset
+        
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
         self.perform_destroy(instance)
@@ -34,9 +68,86 @@ class AmazonExclusiveViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'], url_path='dashboard')
     def dashboard(self, request):
-        """Return all AmazonExclusive records including price histories for dashboard, paginated."""
+        """
+        Return all AmazonExclusive records including price histories for dashboard, paginated.
+        
+        Filtering is supported on the following fields:
+        - master_season: Filter by master season ID (exact or in list)
+        - dept_div: Filter by department division ID (exact or in list)
+        - category: Filter by category ID (exact or in list)
+        - subclass: Filter by subclass ID (exact or in list)
+        - min_price: Filter by minimum list price
+        - max_price: Filter by maximum list price
+        
+        Sorting is supported using:
+        - sort_by=list_price or sort_by=price_history
+        - sort_order=asc or sort_order=desc (default: desc)
+        
+        Example: 
+        - /api/amazon-exclusives/dashboard/?master_season=1&dept_div=2
+        - /api/amazon-exclusives/dashboard/?sort_by=price_history&sort_order=asc
+        - /api/amazon-exclusives/dashboard/?min_price=100&max_price=1000
+        """
+        # Apply filters from query parameters
+        master_season = request.query_params.getlist('master_season')
+        dept_div = request.query_params.getlist('dept_div')
+        category = request.query_params.getlist('category')
+        subclass = request.query_params.getlist('subclass')
+        
+        # Get price range parameters
+        min_price = request.query_params.get('min_price')
+        max_price = request.query_params.get('max_price')
+        
+        # Get sort parameters
+        sort_by = request.query_params.get('sort_by')
+        sort_order = request.query_params.get('sort_order', 'desc').lower()
+        
+        # Start with base queryset
+        queryset = self.get_queryset()
+        
+        # Apply filters
+        if master_season:
+            queryset = queryset.filter(master_season_id__in=master_season)
+        if dept_div:
+            queryset = queryset.filter(dept_div_id__in=dept_div)
+        if category:
+            queryset = queryset.filter(category_id__in=category)
+        if subclass:
+            queryset = queryset.filter(subclass_id__in=subclass)
+            
+        # Apply price range filters if provided
+        if min_price is not None:
+            try:
+                min_price = float(min_price)
+                queryset = queryset.filter(list_price__gte=min_price)
+            except (ValueError, TypeError):
+                pass
+                
+        if max_price is not None:
+            try:
+                max_price = float(max_price)
+                queryset = queryset.filter(list_price__lte=max_price)
+            except (ValueError, TypeError):
+                pass
+            
+        # Handle sorting
+        if sort_by == 'price_history':
+            # For dashboard, we need to handle the subquery again since we're using select_related
+            latest_price = ProductPriceHistory.objects.filter(
+                amazon_exclusive=OuterRef('pk')
+            ).order_by('-created_at').values('new_price')[:1]
+            
+            from django.db.models import DecimalField
+            queryset = queryset.annotate(
+                latest_price=Subquery(latest_price, output_field=DecimalField(max_digits=50, decimal_places=2))
+            )
+            
+            order_by = 'latest_price' if sort_order == 'asc' else '-latest_price'
+            queryset = queryset.order_by(order_by)
+        
+        # Apply select_related and prefetch_related
         qs = self.filter_queryset(
-            self.get_queryset()
+            queryset
             .select_related('master_season', 'dept_div', 'category', 'subclass')
             .prefetch_related('price_history')
         )

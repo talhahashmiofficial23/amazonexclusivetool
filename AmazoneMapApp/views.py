@@ -199,6 +199,7 @@ class AmazonExclusiveViewSet(viewsets.ModelViewSet):
 class BaseDropdownViewSet(viewsets.ModelViewSet):
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticated]
+    pagination_class = None
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     search_fields = ['name']
     filterset_fields = ['name']

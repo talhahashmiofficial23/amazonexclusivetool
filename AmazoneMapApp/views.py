@@ -260,7 +260,7 @@ class ProductPriceHistoryViewSet(viewsets.GenericViewSet, mixins.CreateModelMixi
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticated]
     serializer_class = CreateProductPriceHistorySerializer
-    
+
     def create(self, request, *args, **kwargs):
         """
         Create a new price history entry.
@@ -269,12 +269,65 @@ class ProductPriceHistoryViewSet(viewsets.GenericViewSet, mixins.CreateModelMixi
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         price_history = serializer.save()
-        
         # Return the created price history with full details
         response_serializer = ProductPriceHistorySerializer(price_history)
         headers = self.get_success_headers(response_serializer.data)
         return Response(
-            response_serializer.data, 
-            status=status.HTTP_201_CREATED, 
+            response_serializer.data,
+            status=status.HTTP_201_CREATED,
             headers=headers
         )
+
+    @action(detail=False, methods=['get'], url_path='products')
+    def list_products(self, request):
+        """
+        List all AmazonExclusive products, paginated.
+        Supports dynamic ?page_size= parameter for this endpoint only.
+        """
+        queryset = AmazonExclusive.objects.all().order_by('-id')
+
+        # Dynamically set page_size for this action only
+        try:
+            page_size = int(request.query_params.get('page_size', 0))
+            if page_size > 0:
+                self.paginator.page_size = page_size
+        except (ValueError, TypeError, AttributeError):
+            pass  # fallback to default
+
+        page = self.paginate_queryset(queryset)
+        serializer = AmazonExclusiveSerializer(page, many=True)
+        return self.get_paginated_response(serializer.data)
+
+    @action(detail=False, methods=['post'], url_path='bulk_create_history')
+    def bulk_create_history(self, request):
+        """
+        Create price history entries for multiple product IDs, each with its own price.
+        Expects: { "items": [ {"id": 1, "new_price": 100}, ... ] }
+        """
+        items = request.data.get('items', [])
+        if not isinstance(items, list) or not items:
+            return Response({'detail': 'items (list of {id, new_price}) is required.'}, status=400)
+
+        histories = []
+        for entry in items:
+            product_id = entry.get('id')
+            new_price = entry.get('new_price')
+            if product_id is None or new_price is None:
+                continue
+            try:
+                product = AmazonExclusive.objects.get(id=product_id)
+                old_price = product.list_price or 0
+                if old_price != new_price:
+                    product.list_price = new_price
+                    product.save(skip_price_history=True)
+                    history = ProductPriceHistory.objects.create(
+                        amazon_exclusive=product,
+                        old_price=old_price,
+                        new_price=new_price
+                    )
+                    histories.append(ProductPriceHistorySerializer(history).data)
+            except AmazonExclusive.DoesNotExist:
+                continue
+
+        return Response({'created_histories': histories}, status=201)
+

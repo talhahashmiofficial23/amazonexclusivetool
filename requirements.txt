@@ -7,3 +7,4 @@ drf-yasg
 django-environ
 django-cors-headers
 django-filter
+openpyxl

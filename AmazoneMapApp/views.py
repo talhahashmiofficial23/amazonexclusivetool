@@ -13,6 +13,7 @@ from .serializers import (
 )
 
 from rest_framework.permissions import IsAuthenticated
+from django.http import HttpResponse
 
 class AmazonExclusiveViewSet(viewsets.ModelViewSet):
     authentication_classes = [JWTAuthentication]
@@ -283,8 +284,75 @@ class ProductPriceHistoryViewSet(viewsets.GenericViewSet, mixins.CreateModelMixi
         """
         List all AmazonExclusive products, paginated.
         Supports dynamic ?page_size= parameter for this endpoint only.
+        If ?is_excel=true is passed, returns all products as an Excel file.
         """
         queryset = AmazonExclusive.objects.all().order_by('-id')
+
+        is_excel = request.query_params.get('is_excel', 'false').lower() == 'true'
+        page_size = 0
+        try:
+            page_size = int(request.query_params.get('page_size', 0))
+        except (ValueError, TypeError):
+            page_size = 0
+        if is_excel:
+            # Generate Excel file for all products (respect page_size)
+            import openpyxl
+            from openpyxl.utils import get_column_letter
+            from io import BytesIO
+            wb = openpyxl.Workbook()
+            ws = wb.active
+            ws.title = "Product Price History"
+
+            # Dynamically get all fields from AmazonExclusive
+            model = AmazonExclusive
+            fields = [f for f in model._meta.get_fields() if (f.concrete and not f.many_to_many and not f.one_to_many)]
+            columns = [(f.verbose_name.title() if hasattr(f, 'verbose_name') else f.name.replace('_', ' ').title(), f.name) for f in fields]
+            # Add price history columns
+            columns += [
+                ('Old Price', 'price_history_old_price'),
+                ('New Price', 'price_history_new_price'),
+            ]
+            ws.append([col[0] for col in columns])
+            # Apply page size limitation
+            objects = queryset[:page_size] if page_size > 0 else queryset
+            from datetime import datetime
+            for obj in objects:
+                # Get latest price history for this product
+                latest_history = obj.price_history.order_by('-id').first()
+                def make_naive(dt):
+                    if isinstance(dt, datetime) and dt.tzinfo is not None:
+                        return dt.replace(tzinfo=None)
+                    return dt
+                row = []
+                for _, field_name in columns:
+                    if field_name == 'price_history_old_price':
+                        row.append(getattr(latest_history, 'old_price', '') if latest_history else '')
+                    elif field_name == 'price_history_new_price':
+                        row.append(getattr(latest_history, 'new_price', '') if latest_history else '')
+                    else:
+                        val = getattr(obj, field_name, '')
+                        # For ForeignKey fields, get the ID
+                        if hasattr(obj._meta.get_field(field_name), 'remote_field') and obj._meta.get_field(field_name).remote_field:
+                            val = getattr(obj, f"{field_name}_id", '')
+                        # Handle datetimes
+                        if hasattr(val, 'tzinfo'):
+                            val = make_naive(val)
+                        row.append(val)
+                ws.append(row)
+
+            # Auto-size columns
+            for i, col in enumerate(columns, 1):
+                ws.column_dimensions[get_column_letter(i)].width = 20
+            # Save to response
+            output = BytesIO()
+            wb.save(output)
+            output.seek(0)
+            response = HttpResponse(
+                output.read(),
+                content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+            )
+            response['Content-Disposition'] = 'attachment; filename=amazon_exclusive_products.xlsx'
+            return response
 
         # Dynamically set page_size for this action only
         try:
